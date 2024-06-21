@@ -1,0 +1,123 @@
+---
+import Mail from "@/components/icon/mail.astro";
+import { Image } from "astro:assets";
+---
+
+<section id="contact" class="px-6 py-24">
+  <div class="max-w-screen-lg m-auto">
+    <h2 class="mb-12 text-5xl font-bold text-center">Contacto</h2>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div class="items-end justify-start hidden md:flex">
+        <Image
+          class="rounded-xl"
+          src="/dev.gif"
+          alt="Contacto"
+          width={500}
+          height={500}
+        />
+      </div>
+
+      <div class="relative">
+        <div
+          class="absolute content-center hidden bg-white size-full success-message"
+        >
+          <span class="block mb-8 text-2xl text-center text-amber-600"
+            >¡Gracias por tu mensaje!</span
+          >
+          <span class="block text-lg text-center text-amber-600"
+            >Te responderé lo antes posible</span
+          >
+        </div>
+
+        <form class="mb-6">
+          <label for="name" class="block mb-1 font-semibold">Nombre</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            class="block w-full px-4 py-2 mb-6 border border-gray-300 rounded-md"
+          />
+
+          <label for="email" class="block mb-1 font-semibold"
+            >Correo electrónico</label
+          >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="block w-full px-4 py-2 mb-6 border border-gray-300 rounded-md"
+          />
+
+          <label for="message" class="block mb-1 font-semibold">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            class="block w-full px-4 py-2 mb-2 border border-gray-300 rounded-md resize-none"
+          ></textarea>
+
+          <span class="invisible text-red-500 error-message"
+            >Tu mensaje no se ha podido enviar</span
+          >
+
+          <input
+            class="grid w-full h-12 px-6 py-3 font-semibold text-white place-items-center md:w-32 hover:shadow-md hover:shadow-slate-300 from-amber-500 to-amber-600 bg-gradient-to-br rounded-xl hover:cursor-pointer"
+            type="submit"
+            value="Enviar"
+          />
+
+          <div
+            class="hidden w-full h-12 px-6 py-3 font-semibold text-white loading place-items-center md:w-32 from-amber-500/50 to-amber-600/50 bg-gradient-to-br rounded-xl"
+          >
+            <span
+              class="absolute block mx-auto border-t-2 border-r-2 border-white rounded-full size-8 animate-spin"
+            ></span>
+          </div>
+        </form>
+        <!-- <p>O escribeme al correo</p>
+        <a
+          class="flex gap-1 font-semibold text-amber-500 hover:text-amber-600"
+          href="mailto:fabianmorag0405@gmail.com"
+          ><Mail size={24} />Fabianmorag0405@gmail.com</a
+        > -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const $ = (selector: string) =>
+    document.querySelector(selector) as HTMLElement;
+
+  const form = $("form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const successMessage = $(".success-message");
+    const errorMessage = $(".error-message");
+    const btn = $("form input[type=submit]");
+    const btnSpinner = $("form .loading");
+
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = Object.fromEntries(formData);
+
+    btn.style.display = "none";
+    btnSpinner.style.display = "grid";
+
+    fetch("https://resend.fabianmorag.workers.dev/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) =>
+      res.ok
+        ? (successMessage.style.display = "block")
+        : (() => {
+            errorMessage.style.visibility = "visible";
+            btn.style.display = "block";
+            btnSpinner.style.display = "none";
+          })(),
+    );
+  });
+</script>
