@@ -6,35 +6,38 @@ import GithubIcon from "@/components/icon/github.astro";
 
 <section
   id="hero"
-  class="content-center min-h-screen px-6 py-64 radial-background"
+  class="content-center min-h-screen px-6 py-40 md:py-64 radial-background"
 >
   <div
     class="flex flex-col-reverse items-center justify-between max-w-screen-lg gap-12 mx-auto md:flex-row"
   >
     <div>
-      <small class="block text-xl text-center md:text-left text-slate-700">
+      <small
+        class="block text-base text-center md:text-xl md:text-left text-slate-700"
+      >
         ¡Hola! Mi nombre es
       </small>
       <h1
-        class="text-6xl font-bold text-center md:text-8xl md:text-left animate-fade-up"
+        class="mb-4 text-5xl font-bold text-center md:text-8xl md:text-left animate-fade-up"
       >
         Fabián Morag
       </h1>
       <small
-        class="block mb-6 text-2xl text-center md:text-left text-slate-700 animate-fade-up"
+        class="block mb-6 text-xl text-center md:text-2xl md:text-left text-slate-700 animate-fade-up"
       >
         <span class="block">Ingeniero de Software</span>
         <span class="block">Desarrollador Web - CRO</span>
       </small>
       <p
-        class="mb-6 text-center md:text-left text-slate-600 animate-fade-up animate-delay-200"
+        class="mb-6 text-center md:text-left text-slate-600 animate-fade-up animate-delay-200 text-balance"
       >
-        Ingeniero en Informática con experiencia en tecnologías de frontend y
-        backend. <br /> Apasionado por el desarrollo, comprometido con un ambiente
-        laboral positivo y colaborativo.
+        Ingeniero en informática con experiencia en tecnologías tanto de
+        frontend como de backend. Me destaco por mi motivación hacia el
+        desarrollo de software, combinada con un compromiso innato por fomentar
+        un entorno laboral positivo y colaborativo.
       </p>
       <div
-        class="flex justify-center gap-4 md:justify-normal animate-fade-up animate-delay-500"
+        class="flex justify-center gap-2 md:gap-4 md:justify-normal animate-fade-up animate-delay-500"
       >
         <a
           class="block w-full px-6 py-3 font-semibold text-center text-white rounded-xl from-amber-500 to-amber-600 bg-gradient-to-br md:w-fit hover:shadow-md hover:shadow-slate-300"
@@ -57,13 +60,14 @@ import GithubIcon from "@/components/icon/github.astro";
         </a>
       </div>
     </div>
+
     <Image
-      class="rounded-full border-t-2 border-r-2 border-amber-400 object-cover mb-8 drop-shadow-[4px_4px_4px_rgba(0,0,0,.3)] md:mb-0 animate-fade animate-delay-100 object-center scale-125"
+      class="rounded-full border-t-2 border-r-2 border-amber-400 object-contain mb-4 drop-shadow-[4px_4px_4px_rgba(0,0,0,.3)] md:mb-0 animate-fade animate-delay-100 object-center scale-110 w-60 md:w-80"
       style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%)"
       src="/avatar-2.webp"
       alt="fotografia de Fabián Morag"
-      width={320}
-      height={480}
+      width={360}
+      height={360}
     />
   </div>
 </section>
@@ -71,7 +75,7 @@ import GithubIcon from "@/components/icon/github.astro";
 <style>
   .radial-background {
     background: radial-gradient(
-        150% 650px at 50% 700px,
+        150% 300px at 50% 70%,
         var(--main-bg-color) 75%,
         transparent 75.2%
       ),
@@ -82,7 +86,7 @@ import GithubIcon from "@/components/icon/github.astro";
   @media (width>=768px) {
     .radial-background {
       background: radial-gradient(
-          150% 650px at 50% 650px,
+          120% 650px at 50% 60%,
           var(--main-bg-color) 75%,
           transparent 75.2%
         ),
