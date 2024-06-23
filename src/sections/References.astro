@@ -1,7 +1,37 @@
+---
+import { Image } from "astro:assets";
+import { REFERENCES } from "@/contants/references.js";
+import LinkedinIcon from "@/components/icon/linkedin.astro";
+---
+
 <section id="references" class="px-6 py-24">
   <div class="max-w-screen-lg m-auto">
     <h2 class="mb-12 text-4xl font-bold text-center md:text-5xl">
       Referencias
     </h2>
+
+    <div class="grid gap-4 md:grid-cols-2">
+      {
+        REFERENCES.map(({ name, image, role, rec }) => (
+          <article class="relative px-6 py-8 border shadow md:px-8 border-slate-200 rounded-xl shadow-slate-200">
+            <div class="absolute text-sky-600/20 right-8 top-4">
+              <LinkedinIcon size={96} />
+            </div>
+            <Image
+              src={image}
+              alt={`Imagen de ${name}`}
+              class="object-contain rounded-full"
+              width={64}
+              height={64}
+            />
+            <span class="block text-lg font-bold md:text-xl">{name}</span>
+            <span class="block mb-4 text-sm text-slate-400">{role}</span>
+            <p class="text-sm whitespace-pre-line text-slate-600 md:text-base">
+              {rec}
+            </p>
+          </article>
+        ))
+      }
+    </div>
   </div>
 </section>
