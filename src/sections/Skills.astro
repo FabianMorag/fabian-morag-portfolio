@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { SKILLS } from "@/contants/skills";
 ---
 
 <section id="skills" class="px-6 py-24">
@@ -8,250 +9,22 @@ import { Image } from "astro:assets";
       Conocimientos
     </h2>
     <ul class="flex flex-wrap justify-center gap-3 md:gap-6">
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/html.webp"
-          alt="html"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">Html</footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/css.webp"
-          alt="css"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">Css</footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/javascript.webp"
-          alt="javascript"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Javascript
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/typescript.webp"
-          alt="typescript"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Typescript
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/git.webp"
-          alt="git"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">Git</footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/github.webp"
-          alt="github"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          GitHub
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/nodejs.webp"
-          alt="nodejs"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          NodeJs
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/tailwindcss.webp"
-          alt="tailwindcss"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          TailwindCss
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/sass.webp"
-          alt="sass"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">Sass</footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/astro.webp"
-          alt="astro"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Astro
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/nextjs.webp"
-          alt="nextjs"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          NextJs
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/wordpress.webp"
-          alt="wordpress"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Wordpress
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/directus.webp"
-          alt="directus"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Directus
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/mysql.webp"
-          alt="mysql"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          MySQL
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/postgresql.webp"
-          alt="postgresql"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          PostgreSQL
-        </footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/gcp.webp"
-          alt="gcp"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">GCP</footer>
-      </li>
-
-      <li
-        class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36"
-      >
-        <Image
-          class="object-contain mx-auto mb-4 size-6 md:size-12"
-          src="/software/nginx.webp"
-          alt="nginx"
-          width={48}
-          height={48}
-        />
-        <footer class="text-sm font-medium text-center md:text-lg">
-          Nginx
-        </footer>
-      </li>
+      {
+        SKILLS.map(({ name, imageSrc }) => (
+          <li class="w-24 py-3 border shadow border-slate-200 shadow-slate-200 rounded-xl md:w-36">
+            <Image
+              class="object-contain mx-auto mb-4 size-6 md:size-12"
+              src={imageSrc}
+              alt={`Logo ${name}`}
+              width={48}
+              height={48}
+            />
+            <footer class="text-sm font-medium text-center md:text-lg">
+              {name}
+            </footer>
+          </li>
+        ))
+      }
     </ul>
   </div>
 </section>
