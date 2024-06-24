@@ -9,20 +9,31 @@ import { EXPERIENCE } from "@/contants/experience";
     </h2>
     <div class="flex flex-col gap-6">
       {
-        EXPERIENCE.map(({ role, company, description, startDate, endDate }) => (
-          <article class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl bg-slate-200 shadow-slate-200">
-            <div class="w-full text-lg md:w-1/4 text-nowrap">
-              <time datetime={startDate?.dateTime}>{startDate.textTime}</time> -
-              <time datetime={endDate?.dateTime}>{endDate.textTime}</time>
-            </div>
-            <div class="w-full md:w-3/4">
-              <h3 class="mb-4 text-lg font-semibold md:text-xl">
-                {role} - {company}
-              </h3>
-              <p class="text-sm text-slate-600 md:text-base">{description}</p>
-            </div>
-          </article>
-        ))
+        EXPERIENCE.map(
+          ({ role, company, description, startDate, endDate }, index) => (
+            <article
+              class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl shadow-slate-200"
+              class:list={[
+                {
+                  "bg-slate-200": index == 0,
+                  "bg-slate-100": index == 1,
+                  "bg-slate-50": index == 2,
+                },
+              ]}
+            >
+              <div class="w-full text-lg md:w-1/4 text-nowrap">
+                <time datetime={startDate?.dateTime}>{startDate.textTime}</time>{" "}
+                -<time datetime={endDate?.dateTime}>{endDate.textTime}</time>
+              </div>
+              <div class="w-full md:w-3/4">
+                <h3 class="mb-4 text-lg font-semibold md:text-xl">
+                  {role} - {company}
+                </h3>
+                <p class="text-sm text-slate-600 md:text-base">{description}</p>
+              </div>
+            </article>
+          ),
+        )
       }
     </div>
   </div>
