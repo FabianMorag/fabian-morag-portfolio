@@ -1,78 +1,29 @@
+---
+import { EXPERIENCE } from "@/contants/experience";
+---
+
 <section id="experience" class="px-6 py-24">
   <div class="max-w-screen-lg m-auto">
     <h2 class="mb-12 text-4xl font-bold text-center md:text-5xl">
       Experiencia
     </h2>
     <div class="flex flex-col gap-6">
-      <article
-        class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl bg-slate-200 shadow-slate-200"
-      >
-        <div class="w-full text-lg md:w-1/4 text-nowrap">
-          <time datetime="2022-07">Jul 2022</time> - <time>Actualidad</time>
-        </div>
-        <div class="w-full md:w-3/4">
-          <h3 class="mb-4 text-lg font-semibold md:text-xl">
-            Analista Front end - D2B
-          </h3>
-          <p class="text-sm text-slate-600 md:text-base">
-            Trabajo en el equipo de Optimización de la Tasa de Conversión (CRO)
-            de la empresa, donde me encargo de la planificación y ejecución de
-            experimentos web basados en análisis de datos. Lidero reuniones con
-            clientes y contribuyo en la creación de HTML para correos
-            electrónicos. Además, he participado activamente en el desarrollo y
-            modificaciones de diversos sitios web internos y de clientes.
-            Utilizo herramientas especializadas como ABTasty y Google Analytics
-            4 para pruebas y análisis de datos.
-          </p>
-        </div>
-      </article>
-
-      <article
-        class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl bg-slate-100 shadow-slate-200"
-      >
-        <div class="w-full text-lg md:w-1/4 text-nowrap">
-          <time datetime="2021-05">May 2021</time> - <time datetime="2021-11"
-            >Nov 2021</time
-          >
-        </div>
-        <div class="w-full md:w-3/4">
-          <h3 class="mb-4 text-lg font-semibold md:text-xl">
-            Soporte técnico - Universidad Austral de Chile
-          </h3>
-          <p class="text-sm text-slate-600 md:text-base">
-            Brindé soporte técnico y mantenimiento al proyecto TrAC,
-            involucrándome en la revisión de la configuración del servidor, la
-            corrección de vulnerabilidades y la generación periodica de
-            respaldos de bases de datos. Además, desarrollé documentación
-            detallada de los procesos llevados a cabo durante este periodo. Mi
-            trabajo principal se centró en la gestión del servidor y la
-            configuración de la aplicación en Docker.
-          </p>
-        </div>
-      </article>
-
-      <article
-        class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl bg-slate-50 shadow-slate-200"
-      >
-        <div class="w-full text-lg md:w-1/4 text-nowrap">
-          <time datetime="2021-01">Ene 2021</time> - <time datetime="2021-03"
-            >Mar 2021</time
-          >
-        </div>
-        <div class="w-full md:w-3/4">
-          <h3 class="mb-4 text-lg font-semibold md:text-xl">
-            Ingeniero de Software - Puentes Digitales (Práctica profesional)
-          </h3>
-          <p class="text-sm text-slate-600 md:text-base">
-            Como practicante en la empresa consultora, participé en la creación
-            de nuevas interfaces y funcionalidades para el proyecto TrAC. El
-            desarrollo se llevó a cabo bajo metodologías ágiles, utilizando
-            historias de usuario recopiladas por los ingenieros responsables.
-            Las principales herramientas empleadas incluyeron NextJS, bases de
-            datos SQL y sistemas de gestión de tareas.
-          </p>
-        </div>
-      </article>
+      {
+        EXPERIENCE.map(({ role, company, description, startDate, endDate }) => (
+          <article class="flex flex-col gap-4 px-6 py-8 border shadow md:px-8 md:flex-row border-slate-200 rounded-xl bg-slate-200 shadow-slate-200">
+            <div class="w-full text-lg md:w-1/4 text-nowrap">
+              <time datetime={startDate?.dateTime}>{startDate.textTime}</time> -
+              <time datetime={endDate?.dateTime}>{endDate.textTime}</time>
+            </div>
+            <div class="w-full md:w-3/4">
+              <h3 class="mb-4 text-lg font-semibold md:text-xl">
+                {role} - {company}
+              </h3>
+              <p class="text-sm text-slate-600 md:text-base">{description}</p>
+            </div>
+          </article>
+        ))
+      }
     </div>
   </div>
 </section>
