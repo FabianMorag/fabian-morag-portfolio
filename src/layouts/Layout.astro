@@ -15,13 +15,32 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		<link rel="canonical" href="https://fabianmorag.com/" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+
+		<script is:inline type="application/ld+json">
+			{
+				"@context": "https://schema.org/",
+				"@type": "Person",
+				"name": "Fabián Morag",
+				"url": "https://fabianmorag.com/",
+				"image": "https://fabianmorag.com/fabian-morag.webp",
+				"sameAs": [
+					"https://github.com/FabianMorag",
+					"https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"
+				],
+				"jobTitle": "Software Engineer, Web Developer, CRO",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "D2B"
+				}
+			}
+		</script>
 	</head>
 
 	<body>
