@@ -53,6 +53,10 @@ export const SKILLS =
       imageSrc: '/software/directus.webp'
     },
     {
+      name: 'MongoDB',
+      imageSrc: '/software/mongodb.webp'
+    },
+    {
       name: 'MySQL',
       imageSrc: '/software/mysql.webp'
     },
