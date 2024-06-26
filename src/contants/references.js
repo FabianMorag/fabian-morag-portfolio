@@ -9,6 +9,6 @@ export const REFERENCES = [
     name: 'Barbara Mujica Molteni',
     image: '/barbara-mujica.webp',
     role: 'UX/UI Designer',
-    rec: 'Tuve el placer de trabajar con Fabián en D2B. Como Analista Front End, destaca por su excelente conocimiento técnico y su colaboración. Fabián siempre convirtió mis diseños en interfaces atractivas y funcionales, colaborando de manera efectiva para garantizar la mejor calidad en cada proyecto. Su capacidad para adaptarse a nuevas tecnologías y su dedicación lo hacen un valioso miembro de cualquier equipo.'
+    rec: 'Tuve el placer de trabajar con Fabián en D2B. Como Analista Front End, destaca por su excelente conocimiento técnico y su colaboración.\nFabián siempre convirtió mis diseños en interfaces atractivas y funcionales, colaborando de manera efectiva para garantizar la mejor calidad en cada proyecto. Su capacidad para adaptarse a nuevas tecnologías y su dedicación lo hacen un valioso miembro de cualquier equipo.'
   }
 ]
