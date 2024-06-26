@@ -17,6 +17,10 @@ export const SKILLS =
       imageSrc: '/software/typescript.webp'
     },
     {
+      name: 'Python',
+      imageSrc: '/software/python.webp'
+    },
+    {
       name: 'Git',
       imageSrc: '/software/git.webp'
     },
