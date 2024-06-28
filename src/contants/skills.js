@@ -29,16 +29,12 @@ export const SKILLS =
       imageSrc: '/software/github.webp'
     },
     {
+      name: 'Expresjs',
+      imageSrc: '/software/expressjs.webp'
+    },
+    {
       name: 'Nodejs',
       imageSrc: '/software/nodejs.webp'
-    },
-    {
-      name: 'TailwindCss',
-      imageSrc: '/software/tailwindcss.webp'
-    },
-    {
-      name: 'Sass',
-      imageSrc: '/software/sass.webp'
     },
     {
       name: 'Astro',
@@ -47,6 +43,14 @@ export const SKILLS =
     {
       name: 'Nextjs',
       imageSrc: '/software/nextjs.webp'
+    },
+    {
+      name: 'TailwindCss',
+      imageSrc: '/software/tailwindcss.webp'
+    },
+    {
+      name: 'Sass',
+      imageSrc: '/software/sass.webp'
     },
     {
       name: 'Wordpress',
