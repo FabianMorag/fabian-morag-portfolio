@@ -27,7 +27,7 @@ export const PROJECTS = [
     secBtn: 'Código'
   },
   {
-    name: 'Juego de encontrar cartas iguales',
+    name: 'Juego: Encontrar los pares',
     img: '/match-pairs.webp',
     description: 'Un juego simple pero de mucha lógica, donde el objetivo es encontrar todas las cartas iguales en el menor número de intentos posible. Desarrollado con React y Sass para el diseño y la interacción del juego.',
     siteUrl: 'https://fabianmorag.github.io/match-pairs',
