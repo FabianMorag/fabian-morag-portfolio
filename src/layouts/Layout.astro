@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Fabián Morag 🧑‍💻</title>
+		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		<link rel="canonical" href="https://fabianmorag.com/" />
@@ -55,7 +55,6 @@ const { title, description } = Astro.props;
 <style is:global>
 	html {
 		--main-bg-color: #fffbeb;
-		/* --main-bg-color: #fef3c7; */
 		--main-text-color: #1e293b;
 
 		scroll-behavior: smooth;
@@ -64,7 +63,8 @@ const { title, description } = Astro.props;
 		color: var(--main-text-color);
 	}
 
-	p {
+	p,
+	li {
 		text-wrap: pretty;
 	}
 </style>
