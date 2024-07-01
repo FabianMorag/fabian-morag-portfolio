@@ -23,13 +23,17 @@ import { EXPERIENCE } from "@/contants/experience";
             >
               <div class="w-full text-lg md:w-1/4 text-nowrap">
                 <time datetime={startDate?.dateTime}>{startDate.textTime}</time>{" "}
-                -<time datetime={endDate?.dateTime}>{endDate.textTime}</time>
+                - <time datetime={endDate?.dateTime}>{endDate.textTime}</time>
               </div>
               <div class="w-full md:w-3/4">
                 <h3 class="mb-4 text-lg font-semibold md:text-xl">
                   {role} - {company}
                 </h3>
-                <p class="text-sm text-slate-600 md:text-base">{description}</p>
+                <ul class="pl-4 text-sm list-disc text-slate-600 md:text-base [&>li]:mb-1">
+                  {description.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
               </div>
             </article>
           ),
