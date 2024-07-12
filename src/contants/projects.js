@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     name: 'D2B - Sitio web oficial',
     img: '/d2b.webp',
-    description: 'Este es el sitio web de la consultora D2B donde muestra sus servicios, contacto, y su blog. Fue desarrollado utilizando Astro y Tailwind CSS en el frontend para optimizar el rendimiento y el diseño del sitio. En el backend, integra WordPress y Directus para la gestión de contenido principal y personalización avanzada de datos.',
+    description: 'Sitio web de la consultora D2B donde muestra sus servicios, contacto, y su blog. Fue desarrollado desde cero utilizando Astro y Tailwind CSS en el frontend para optimizar el rendimiento y el diseño del sitio. En el backend, integra WordPress y Directus para la gestión de contenido principal y personalización avanzada de datos. Las bases de datos y el despliegue de la app están gestionadas en GCP.',
     siteUrl: 'https://dev.d2b.cl/',
     srcCodeUrl: 'https://github.com/CRO-D2B/web-d2b-2024',
     mainBtn: 'Visitar sitio',
