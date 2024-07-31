@@ -4,8 +4,9 @@ export const EXPERIENCE = [
     company: 'D2B',
     description: [
       'Liderar reuniones, planificación y ejecución de experimentos web para VTR Claro.',
-      'Contribución en la creación de HTML para correos de la aerolínea SKY.',
       'Levantamiento de infraestructura (GCP) y desarrollo frontend/backend para sitio web de D2B.',
+      'Desarrollo de funciones para AB test en Coopeuch',
+      'Contribución en la creación de HTML para correos de la aerolínea SKY.',
       'Participación activa en el desarrollo y modificaciones de diversos sitios web internos y de clientes.',
       'Uso de herramientas especializadas en AB test y análisis, como ABTasty y Google Analytics 4.'
     ],
