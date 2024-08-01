@@ -1,6 +1,9 @@
 const robotsTxt = `
 User-agent: *
 Allow: /
+
+Disallow: /*.pdf$
+
 Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
 `.trim()
 
