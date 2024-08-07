@@ -3,7 +3,7 @@ export const PROJECTS = [
     name: 'D2B - Sitio web oficial',
     img: '/d2b.webp',
     description: 'Sitio web desarrollado con Astro y Tailwind CSS en el frontend para rendimiento y diseño óptimos. Backend con WordPress y Directus para gestión y personalización de contenido. Bases de datos y despliegue gestionados en GCP.',
-    siteUrl: 'https://dev.d2b.cl/',
+    siteUrl: 'https://d2b.cl/',
     srcCodeUrl: 'https://github.com/CRO-D2B/web-d2b-2024',
     mainBtn: 'Visitar sitio',
     secBtn: 'Código'
