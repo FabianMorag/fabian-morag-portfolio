@@ -41,7 +41,7 @@ export const SKILLS =
       imageSrc: '/software/nextjs.webp'
     },
     {
-      name: 'Expresjs',
+      name: 'Expressjs',
       imageSrc: '/software/expressjs.webp'
     },
     {
