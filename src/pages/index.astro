@@ -27,14 +27,16 @@ import CallToAction from "@/sections/CallToAction.astro";
 <script>
 	import ScrollReveal from "scrollreveal";
 
-	ScrollReveal().reveal("h2", {
+	ScrollReveal().reveal(".reveal", {
 		origin: "bottom",
 		distance: "50px",
 		viewFactor: 0.5,
 	});
-	ScrollReveal().reveal("article", {
+	ScrollReveal().reveal(".delayed-reveal", {
 		origin: "bottom",
 		distance: "50px",
 		viewFactor: 0.5,
+		delay:200
 	});
+
 </script>
