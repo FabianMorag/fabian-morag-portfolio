@@ -23,3 +23,18 @@ import CallToAction from "@/sections/CallToAction.astro";
 		<Contact />
 	</main>
 </Layout>
+
+<script>
+	import ScrollReveal from "scrollreveal";
+
+	ScrollReveal().reveal("h2", {
+		origin: "bottom",
+		distance: "50px",
+		viewFactor: 0.5,
+	});
+	ScrollReveal().reveal("article", {
+		origin: "bottom",
+		distance: "50px",
+		viewFactor: 0.5,
+	});
+</script>
