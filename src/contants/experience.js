@@ -1,17 +1,27 @@
 export const EXPERIENCE = [
   {
+    role: 'Desarrollador web',
+    company: 'Freelance',
+    description: [
+      'Mantenimiento de infraestructura (GCP).',
+      'Desarrollo de sitios web y funcionalides para clientes.'
+    ],
+    startDate: { dateTime: '2024-11', textTime: 'Nov 2024' },
+    endDate: { textTime: 'Actualidad' }
+  },
+  {
     role: 'Analista Frontend',
     company: 'D2B',
     description: [
-      'Liderar reuniones, planificación y ejecución de experimentos web para VTR Claro.',
+      'Participación activa en el desarrollo y modificaciones de diversos sitios web internos y de clientes.',
       'Levantamiento de infraestructura (GCP) y desarrollo frontend/backend para sitio web de D2B.',
+      'Liderar reuniones, planificación y ejecución de experimentos web para VTR Claro.',
       'Desarrollo de funciones para AB test en Coopeuch',
       'Automatización de templates para mailing de la aerolínea SKY.',
-      'Participación activa en el desarrollo y modificaciones de diversos sitios web internos y de clientes.',
       'Uso de herramientas especializadas en AB test y análisis, como ABTasty y Google Analytics 4.'
     ],
     startDate: { dateTime: '2022-07', textTime: 'Jul 2022' },
-    endDate: { textTime: 'Actualidad' }
+    endDate: { dateTime: '2024-09', textTime: 'Sep 2024' }
   },
   {
     role: 'Soporte Técnico y Mantenimiento',
