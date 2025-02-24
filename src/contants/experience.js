@@ -3,8 +3,9 @@ export const EXPERIENCE = [
     role: 'Desarrollador web',
     company: 'Freelance',
     description: [
+      'Desarrollo web (html 5, css 3, javascript, Astro 4, tailwind 3, wordpress)',
       'Mantenimiento de infraestructura (GCP).',
-      'Desarrollo de sitios web y funcionalides para clientes.'
+      'Automatización de despliegues a producción'
     ],
     startDate: { dateTime: '2024-11', textTime: 'Nov 2024' },
     endDate: { textTime: 'Actualidad' }
