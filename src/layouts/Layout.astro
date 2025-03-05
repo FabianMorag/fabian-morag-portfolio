@@ -4,8 +4,8 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -14,59 +14,59 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>{title}</title>
-		<meta name="title" content={title} />
-		<meta name="description" content={description} />
-		<link rel="canonical" href={canonicalURL} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta name="robots" content="index,follow" />
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="robots" content="index,follow" />
 
-		<script is:inline type="application/ld+json">
-			{
-				"@context": "https://schema.org/",
-				"@type": "Person",
-				"name": "Fabián Morag",
-				"url": "https://fabianmorag.com/",
-				"image": "https://fabianmorag.com/fabian-morag.webp",
-				"sameAs": [
-					"https://github.com/FabianMorag",
-					"https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"
-				],
-				"jobTitle": "Software Engineer, Web Developer, CRO",
-				"worksFor": {
-					"@type": "Organization",
-					"name": "D2B"
-				}
-			}
-		</script>
-	</head>
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Fabián Morag",
+        "url": "https://fabianmorag.com/",
+        "image": "https://fabianmorag.com/fabian-morag.webp",
+        "sameAs": [
+          "https://github.com/FabianMorag",
+          "https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"
+        ],
+        "jobTitle": "Software Engineer, Web Developer, CRO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "D2B"
+        }
+      }
+    </script>
+  </head>
 
-	<body>
-		<Header />
-		<slot />
-		<Footer />
-	</body>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style is:global>
-	html {
-		--main-bg-color: #fffbeb;
-		--main-text-color: #1e293b;
+  html {
+    --main-bg-color: #fffbeb;
+    --main-text-color: #1e293b;
 
-		scroll-behavior: smooth;
-		font-family: "Outfit Variable", sans-serif;
-		/* text-slate-800 */
-		color: var(--main-text-color);
-	}
+    scroll-behavior: smooth;
+    font-family: "Outfit Variable", sans-serif;
+    /* text-slate-800 */
+    color: var(--main-text-color);
+  }
 
-	p,
-	li {
-		text-wrap: pretty;
-	}
+  p,
+  li {
+    text-wrap: pretty;
+  }
 </style>
