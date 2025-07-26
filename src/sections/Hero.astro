@@ -1,40 +1,22 @@
 ---
-import { Image } from "astro:assets";
-import LinkedinIcon from "@/components/icon/linkedin.astro";
-import GithubIcon from "@/components/icon/github.astro";
+import { Image } from 'astro:assets'
+import LinkedinIcon from '@/components/icon/linkedin.astro'
+import GithubIcon from '@/components/icon/github.astro'
 ---
 
-<section
-  id="hero"
-  class="content-center px-6 py-40 md:py-64 min-h-screen radial-background"
->
-  <div
-    class="flex md:flex-row flex-col-reverse justify-between items-center gap-12 mx-auto max-w-screen-lg"
-  >
+<section id="hero" class="content-center px-6 py-40 md:py-64 min-h-screen radial-background">
+  <div class="flex md:flex-row flex-col-reverse justify-between items-center gap-12 mx-auto max-w-screen-lg">
     <div>
-      <small
-        class="block text-slate-700 text-base md:text-xl md:text-left text-center"
-      >
-        ¡Hola! Mi nombre es
-      </small>
-      <h1
-        class="mb-4 font-bold text-5xl md:text-8xl md:text-left text-center animate-fade-up"
-      >
-        Fabián Morag
-      </h1>
-      <small
-        class="block mb-6 text-slate-700 text-xl md:text-2xl md:text-left text-center animate-fade-up"
-      >
+      <small class="block text-slate-700 text-base md:text-xl md:text-left text-center"> ¡Hola! Mi nombre es </small>
+      <h1 class="mb-4 font-bold text-5xl md:text-8xl md:text-left text-center animate-fade-up">Fabián Morag</h1>
+      <small class="block mb-6 text-slate-700 text-xl md:text-2xl md:text-left text-center animate-fade-up">
         <span class="block">Ingeniero de Software</span>
         <span class="block">Desarrollador Web - Fullstack</span>
       </small>
-      <p
-        class="mb-6 text-slate-600 md:text-left text-center text-balance animate-delay-200 animate-fade-up"
-      >
-        Ingeniero en informática con experiencia en tecnologías tanto de
-        frontend como de backend. Me destaco por mi motivación hacia el
-        desarrollo de software, combinada con un compromiso innato por fomentar
-        un entorno laboral positivo y colaborativo.
+      <p class="mb-6 text-slate-600 md:text-left text-center text-balance animate-delay-200 animate-fade-up">
+        Ingeniero en informática con experiencia en tecnologías tanto de frontend como de backend. Me destaco por mi
+        motivación hacia el desarrollo de software, combinada con un compromiso innato por fomentar un entorno laboral
+        positivo y colaborativo.
       </p>
       <div class="flex gap-2 md:gap-4 animate-delay-500 animate-fade-up">
         <a
@@ -76,24 +58,16 @@ import GithubIcon from "@/components/icon/github.astro";
 
 <style>
   .radial-background {
-    background: radial-gradient(
-        150% 300px at 50% 70%,
-        var(--main-bg-color) 75%,
-        transparent 75.2%
-      ),
-      linear-gradient(180deg, var(--main-bg-color) 70%, transparent 70%),
-      transparent;
+    background:
+      radial-gradient(150% 300px at 50% 70%, var(--main-bg-color) 75%, transparent 75.2%),
+      linear-gradient(180deg, var(--main-bg-color) 70%, transparent 70%), transparent;
   }
 
   @media (width>=768px) {
     .radial-background {
-      background: radial-gradient(
-          120% 650px at 50% 50%,
-          var(--main-bg-color) 75%,
-          transparent 75.2%
-        ),
-        linear-gradient(180deg, var(--main-bg-color) 70%, transparent 70%),
-        transparent;
+      background:
+        radial-gradient(120% 650px at 50% 50%, var(--main-bg-color) 75%, transparent 75.2%),
+        linear-gradient(180deg, var(--main-bg-color) 70%, transparent 70%), transparent;
     }
   }
 </style>

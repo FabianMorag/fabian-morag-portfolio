@@ -1,14 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import { REFERENCES } from "@/contants/references.js";
-import LinkedinIcon from "@/components/icon/linkedin.astro";
+import { Image } from 'astro:assets'
+import { REFERENCES } from '@/contants/references.js'
+import LinkedinIcon from '@/components/icon/linkedin.astro'
 ---
 
 <section id="references" class="py-24">
   <div class="max-w-screen-lg m-auto">
-    <h2 class="px-6 mb-12 text-4xl font-bold text-center md:text-5xl">
-      Referencias
-    </h2>
+    <h2 class="px-6 mb-12 text-4xl font-bold text-center md:text-5xl">Referencias</h2>
 
     <div class="relative">
       <div
@@ -16,11 +14,7 @@ import LinkedinIcon from "@/components/icon/linkedin.astro";
       >
         {
           REFERENCES.map(({ name, image, role, rec }, index) => (
-            <div
-              class:list={[
-                "min-w-[90%] snap-center",
-              ]}
-            >
+            <div class:list={['min-w-[90%] snap-center']}>
               <article class="relative h-full px-6 py-8 border shadow md:px-8 border-slate-200 rounded-xl shadow-slate-200">
                 <Image
                   src={image}
@@ -32,9 +26,7 @@ import LinkedinIcon from "@/components/icon/linkedin.astro";
 
                 <span class="block text-lg font-bold md:text-xl">{name}</span>
                 <span class="block mb-4 text-sm text-slate-500">{role}</span>
-                <p class="text-sm whitespace-pre-line text-slate-600 md:text-base">
-                  {rec}
-                </p>
+                <p class="text-sm whitespace-pre-line text-slate-600 md:text-base">{rec}</p>
                 <div class="absolute text-sky-600/20 right-8 top-4">
                   <LinkedinIcon size={96} />
                 </div>
@@ -44,9 +36,7 @@ import LinkedinIcon from "@/components/icon/linkedin.astro";
         }
       </div>
 
-      <button
-        class="absolute z-10 hidden references-carrousel-left-btn left-3 top-1/2 md:hidden"
-      >
+      <button class="absolute z-10 hidden references-carrousel-left-btn left-3 top-1/2 md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -59,9 +49,7 @@ import LinkedinIcon from "@/components/icon/linkedin.astro";
           ></path></svg
         >
       </button>
-      <button
-        class="absolute z-10 references-carrousel-right-btn right-3 top-1/2 md:hidden"
-      >
+      <button class="absolute z-10 references-carrousel-right-btn right-3 top-1/2 md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -76,37 +64,30 @@ import LinkedinIcon from "@/components/icon/linkedin.astro";
       </button>
 
       <script>
-        const lBtn = document.querySelector(
-          ".references-carrousel-left-btn",
-        ) as HTMLButtonElement;
-        const rBtn = document.querySelector(
-          ".references-carrousel-right-btn",
-        ) as HTMLButtonElement;
-        const carrousel = document.querySelector(".references-carrousel");
+        const lBtn = document.querySelector('.references-carrousel-left-btn') as HTMLButtonElement
+        const rBtn = document.querySelector('.references-carrousel-right-btn') as HTMLButtonElement
+        const carrousel = document.querySelector('.references-carrousel')
 
-        lBtn.addEventListener("click", () => {
-          carrousel.scrollBy(-1, 0);
-        });
-        rBtn.addEventListener("click", () => {
-          carrousel.scrollBy(1, 0);
-        });
+        lBtn.addEventListener('click', () => {
+          carrousel.scrollBy(-1, 0)
+        })
+        rBtn.addEventListener('click', () => {
+          carrousel.scrollBy(1, 0)
+        })
 
-        carrousel.addEventListener("scroll", () => {
+        carrousel.addEventListener('scroll', () => {
           if (carrousel.scrollLeft === 0) {
-            lBtn.classList.add("hidden");
+            lBtn.classList.add('hidden')
           } else {
-            lBtn.classList.remove("hidden");
+            lBtn.classList.remove('hidden')
           }
 
-          if (
-            carrousel.scrollLeft ===
-            carrousel.scrollWidth - carrousel.clientWidth
-          ) {
-            rBtn.classList.add("hidden");
+          if (carrousel.scrollLeft === carrousel.scrollWidth - carrousel.clientWidth) {
+            rBtn.classList.add('hidden')
           } else {
-            rBtn.classList.remove("hidden");
+            rBtn.classList.remove('hidden')
           }
-        });
+        })
       </script>
     </div>
   </div>

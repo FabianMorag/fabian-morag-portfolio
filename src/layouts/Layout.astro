@@ -1,16 +1,16 @@
 ---
-import "@fontsource-variable/outfit";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
+import '@fontsource-variable/outfit'
+import Header from '@/components/Header.astro'
+import Footer from '@/components/Footer.astro'
 
 interface Props {
-  title: string;
-  description: string;
+  title: string
+  description: string
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description } = Astro.props;
+const { title, description } = Astro.props
 ---
 
 <!doctype html>
@@ -34,10 +34,7 @@ const { title, description } = Astro.props;
         "name": "Fabián Morag",
         "url": "https://fabianmorag.com/",
         "image": "https://fabianmorag.com/fabian-morag.webp",
-        "sameAs": [
-          "https://github.com/FabianMorag",
-          "https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"
-        ],
+        "sameAs": ["https://github.com/FabianMorag", "https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"],
         "jobTitle": "Software Engineer, Web Developer, CRO",
         "worksFor": {
           "@type": "Organization",
@@ -60,7 +57,7 @@ const { title, description } = Astro.props;
     --main-text-color: #1e293b;
 
     scroll-behavior: smooth;
-    font-family: "Outfit Variable", sans-serif;
+    font-family: 'Outfit Variable', sans-serif;
     /* text-slate-800 */
     color: var(--main-text-color);
   }
