@@ -6,45 +6,45 @@ import GithubIcon from "@/components/icon/github.astro";
 
 <section
   id="hero"
-  class="content-center min-h-screen px-6 py-40 md:py-64 radial-background"
+  class="content-center px-6 py-40 md:py-64 min-h-screen radial-background"
 >
   <div
-    class="flex flex-col-reverse items-center justify-between max-w-screen-lg gap-12 mx-auto md:flex-row"
+    class="flex md:flex-row flex-col-reverse justify-between items-center gap-12 mx-auto max-w-screen-lg"
   >
     <div>
       <small
-        class="block text-base text-center md:text-xl md:text-left text-slate-700"
+        class="block text-slate-700 text-base md:text-xl md:text-left text-center"
       >
         ¡Hola! Mi nombre es
       </small>
       <h1
-        class="mb-4 text-5xl font-bold text-center md:text-8xl md:text-left animate-fade-up"
+        class="mb-4 font-bold text-5xl md:text-8xl md:text-left text-center animate-fade-up"
       >
         Fabián Morag
       </h1>
       <small
-        class="block mb-6 text-xl text-center md:text-2xl md:text-left text-slate-700 animate-fade-up"
+        class="block mb-6 text-slate-700 text-xl md:text-2xl md:text-left text-center animate-fade-up"
       >
         <span class="block">Ingeniero de Software</span>
         <span class="block">Desarrollador Web - Fullstack</span>
       </small>
       <p
-        class="mb-6 text-center md:text-left text-slate-600 animate-fade-up animate-delay-200 text-balance"
+        class="mb-6 text-slate-600 md:text-left text-center text-balance animate-delay-200 animate-fade-up"
       >
         Ingeniero en informática con experiencia en tecnologías tanto de
         frontend como de backend. Me destaco por mi motivación hacia el
         desarrollo de software, combinada con un compromiso innato por fomentar
         un entorno laboral positivo y colaborativo.
       </p>
-      <div class="flex gap-2 md:gap-4 animate-fade-up animate-delay-500">
+      <div class="flex gap-2 md:gap-4 animate-delay-500 animate-fade-up">
         <a
-          class="block w-full px-6 py-3 font-semibold text-center text-white rounded-xl from-amber-500 to-amber-600 bg-gradient-to-br md:w-fit hover:shadow-md hover:shadow-slate-300"
+          class="block bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 px-6 py-3 rounded-xl w-full md:w-fit font-semibold text-white text-center"
           href="https://drive.google.com/file/d/1HsgUBak-HOoB0dklgr4z8hk4Y-rASuIg/view?usp=sharing"
           title="CV - Curriculum vitae de Fabián Morag"
           target="_blank">Descargar CV</a
         >
         <a
-          class="grid p-3 text-white rounded-xl from-amber-500 to-amber-600 bg-gradient-to-br w-fit place-items-center hover:shadow-md hover:shadow-slate-300"
+          class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 p-3 rounded-xl w-fit text-white"
           href="https://www.linkedin.com/in/fabián-morag-b92376241"
           title="Perfil de Linkedin de Fabián Morag"
           target="_blank"
@@ -52,7 +52,7 @@ import GithubIcon from "@/components/icon/github.astro";
           <LinkedinIcon size={20} />
         </a>
         <a
-          class="grid p-3 text-white rounded-xl from-amber-500 to-amber-600 bg-gradient-to-br w-fit place-items-center hover:shadow-md hover:shadow-slate-300"
+          class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 p-3 rounded-xl w-fit text-white"
           href="https://github.com/FabianMorag"
           title="Perfil de GitHub de Fabián Morag"
           target="_blank"
@@ -63,7 +63,7 @@ import GithubIcon from "@/components/icon/github.astro";
     </div>
 
     <Image
-      class="rounded-full border-2 p-2 border-amber-400 object-cover mb-4 drop-shadow-[4px_4px_4px_rgba(0,0,0,.3)] md:mb-0 animate-fade aspect-square animate-delay-100 object-center w-60 md:w-80"
+      class="drop-shadow-[4px_4px_4px_rgba(0,0,0,.3)] mb-4 md:mb-0 p-2 border-2 border-amber-400 rounded-full w-60 md:w-80 object-center object-cover aspect-square animate-delay-100 animate-fade"
       src="/fabian-morag.webp"
       alt="Imagen de Fabián Morag"
       title="Fabián Morag - Ingeniero de Software - Desarrollador Web - CRO"

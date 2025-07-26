@@ -4,12 +4,12 @@ import { Image } from "astro:assets";
 ---
 
 <section id="contact" class="px-6 py-24">
-  <div class="max-w-screen-lg m-auto">
-    <h2 class="mb-12 text-4xl font-bold text-center reveal md:text-5xl">
+  <div class="m-auto max-w-screen-lg">
+    <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">
       Contacto
     </h2>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-      <div class="items-end justify-start hidden md:flex">
+    <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
+      <div class="hidden md:flex justify-start items-end">
         <Image
           class="rounded-xl"
           src="/dev.gif"
@@ -21,12 +21,12 @@ import { Image } from "astro:assets";
 
       <div class="relative">
         <div
-          class="absolute content-center hidden bg-white size-full success-message"
+          class="hidden absolute content-center bg-white size-full success-message"
         >
-          <span class="block mb-8 text-2xl text-center text-amber-600"
+          <span class="block mb-8 text-amber-600 text-2xl text-center"
             >¡Gracias por tu mensaje!</span
           >
-          <span class="block text-lg text-center text-amber-600"
+          <span class="block text-amber-600 text-lg text-center"
             >Te responderé lo antes posible</span
           >
         </div>
@@ -37,7 +37,7 @@ import { Image } from "astro:assets";
             id="name"
             name="name"
             type="text"
-            class="block w-full px-4 py-2 mb-6 border border-gray-300 rounded-md"
+            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md w-full"
           />
 
           <label for="email" class="block mb-1 font-semibold"
@@ -47,7 +47,7 @@ import { Image } from "astro:assets";
             id="email"
             name="email"
             type="email"
-            class="block w-full px-4 py-2 mb-6 border border-gray-300 rounded-md"
+            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md w-full"
           />
 
           <label for="message" class="block mb-1 font-semibold">Mensaje</label>
@@ -55,7 +55,7 @@ import { Image } from "astro:assets";
             id="message"
             name="message"
             rows="3"
-            class="block w-full px-4 py-2 mb-2 border border-gray-300 rounded-md resize-none"
+            class="block mb-2 px-4 py-2 border border-gray-300 rounded-md w-full resize-none"
           ></textarea>
 
           <span class="invisible text-red-500 error-message"
@@ -63,16 +63,16 @@ import { Image } from "astro:assets";
           >
 
           <input
-            class="grid w-full h-12 px-6 py-3 font-semibold text-white place-items-center md:w-32 hover:shadow-md hover:shadow-slate-300 from-amber-500 to-amber-600 bg-gradient-to-br rounded-xl hover:cursor-pointer"
+            class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 px-6 py-3 rounded-xl w-full md:w-32 h-12 font-semibold text-white hover:cursor-pointer"
             type="submit"
             value="Enviar"
           />
 
           <div
-            class="hidden w-full h-12 px-6 py-3 font-semibold text-white loading place-items-center md:w-32 from-amber-500/50 to-amber-600/50 bg-gradient-to-br rounded-xl"
+            class="hidden place-items-center bg-gradient-to-br from-amber-500/50 to-amber-600/50 px-6 py-3 rounded-xl w-full md:w-32 h-12 font-semibold text-white loading"
           >
             <span
-              class="absolute block mx-auto border-t-2 border-r-2 border-white rounded-full size-8 animate-spin"
+              class="block absolute mx-auto border-white border-t-2 border-r-2 rounded-full size-8 animate-spin"
             ></span>
           </div>
         </form>
