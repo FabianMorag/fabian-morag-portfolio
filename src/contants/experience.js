@@ -3,7 +3,7 @@ export const EXPERIENCE = [
     role: 'Desarrollador web',
     company: 'Freelance',
     description: [
-      'Desarrollo web (html 5, css 3, javascript, Astro 4, tailwind 3, wordpress)',
+      'Desarrollo web (HTML 5, CSS 3, JavaScript, Astro 4, Tailwind CSS 3, WordPress)',
       'Mantenimiento de infraestructura (GCP).',
       'Automatización de despliegues a producción'
     ],
@@ -41,11 +41,11 @@ export const EXPERIENCE = [
     company: 'Puentes Digitales (Práctica profesional)',
     description: [
       'Desarrollo de nuevas interfaces y funcionalidades para el proyecto TrAC.',
-      'Todo el desarrollo frontend y backend con NextJS.',
+      'Todo el desarrollo frontend y backend con Next.js.',
       'Manejo de base de datos SQL.',
       'Entorno de trabajo con metodologías ágiles.'
     ],
     startDate: { dateTime: '2021-01', textTime: 'Ene 2021' },
-    endDate: { dateTime: '2021-03', textTime: 'Marzo 2021' }
+    endDate: { dateTime: '2021-03', textTime: 'Mar 2021' }
   }
 ]
