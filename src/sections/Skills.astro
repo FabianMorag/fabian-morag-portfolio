@@ -9,15 +9,15 @@ import { SKILLS } from '@/contants/skills'
     <ul class="flex flex-wrap justify-center gap-3 md:gap-4">
       {
         SKILLS.map(({ name, imageSrc }) => (
-          <li class="shadow shadow-slate-200 p-2 md:py-3 border border-slate-200 rounded-xl w-24 md:w-32">
+          <li class="bg-white shadow-md shadow-slate-200 p-2 md:py-3 rounded-xl w-24 md:w-28">
             <Image
-              class="mx-auto mb-2 size-6 md:size-12 object-contain"
+              class="mx-auto mb-2 size-6 md:size-14 object-contain"
               src={imageSrc}
               alt={`Logo ${name}`}
-              width={48}
-              height={48}
+              width={24}
+              height={24}
             />
-            <footer class="font-medium text-sm md:text-lg text-center">{name}</footer>
+            <footer class="font-medium md:text-md text-sm text-center">{name}</footer>
           </li>
         ))
       }

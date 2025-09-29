@@ -1,5 +1,6 @@
 ---
-import Mail from '@/components/icon/mail.astro'
+import CopyToClipboardSvg from '@/components/icon/copyToClipboard.astro'
+import MailSvg from '@/components/icon/mail.astro'
 import { Image } from 'astro:assets'
 ---
 
@@ -7,23 +8,29 @@ import { Image } from 'astro:assets'
   <div class="m-auto max-w-screen-lg">
     <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Contacto</h2>
     <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
-      <div class="hidden md:flex justify-start items-end">
-        <Image class="rounded-xl" src="/dev.gif" alt="Contacto" width={500} height={500} />
+      <div class="hidden md:flex justify-start items-center">
+        <Image
+          class="rounded-3xl"
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW50bXNkbWV1b3V1NHdsYXhkdm45ZHhpdmh2dnpodjg4azcybHNtMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GghGKaZ8JeHJx0apQC/giphy.gif"
+          alt="Contacto"
+          width={440}
+          height={440}
+        />
       </div>
 
       <div class="relative">
-        <div class="hidden absolute content-center bg-white size-full success-message">
+        <div class="hidden z-10 absolute content-center bg-white size-full success-message">
           <span class="block mb-8 text-amber-600 text-2xl text-center">¡Gracias por tu mensaje!</span>
           <span class="block text-amber-600 text-lg text-center">Te responderé lo antes posible</span>
         </div>
 
-        <form class="mb-6">
+        <form class="flex flex-col flex-start mb-6">
           <label for="name" class="block mb-1 font-semibold">Nombre</label>
           <input
             id="name"
             name="name"
             type="text"
-            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md w-full"
+            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400 w-full"
           />
 
           <label for="email" class="block mb-1 font-semibold">Correo electrónico</label>
@@ -31,7 +38,7 @@ import { Image } from 'astro:assets'
             id="email"
             name="email"
             type="email"
-            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md w-full"
+            class="block mb-6 px-4 py-2 border border-gray-300 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400 w-full"
           />
 
           <label for="message" class="block mb-1 font-semibold">Mensaje</label>
@@ -39,67 +46,92 @@ import { Image } from 'astro:assets'
             id="message"
             name="message"
             rows="3"
-            class="block mb-2 px-4 py-2 border border-gray-300 rounded-md w-full resize-none"></textarea>
+            class="block mb-2 px-4 py-2 border border-gray-300 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400 w-full resize-none"
+          ></textarea>
 
           <span class="invisible text-red-500 error-message">Tu mensaje no se ha podido enviar, intenta nuevamente</span
           >
 
-          <input
-            class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 px-6 py-3 rounded-xl w-full md:w-32 h-12 font-semibold text-white hover:cursor-pointer"
+          <button
+            class="before:top-1/2 before:left-1/2 before:absolute relative hover:before:inset-0 place-items-center grid bg-white before:bg-amber-600 px-6 py-3 border-2 border-amber-600 rounded-2xl before:rounded-full w-full md:w-32 h-12 before:size-0 hover:before:size-full overflow-hidden font-semibold text-amber-600 hover:text-white text-center before:content-[''] hover:before:scale-125 transition-all before:transition-all"
             type="submit"
-            value="Enviar"
-          />
+          >
+            <span class="z-10 relative">Enviar</span></button
+          >
 
           <div
-            class="hidden place-items-center bg-gradient-to-br from-amber-500/50 to-amber-600/50 px-6 py-3 rounded-xl w-full md:w-32 h-12 font-semibold text-white loading"
+            class="hidden place-items-center bg-amber-500/50 px-6 py-3 rounded-xl w-full md:w-32 h-12 font-semibold text-white loading"
           >
             <span class="block absolute mx-auto border-white border-t-2 border-r-2 rounded-full size-8 animate-spin"
             ></span>
           </div>
         </form>
         <p>O escribeme al correo</p>
-        <a
-          class="flex gap-1 font-semibold text-amber-600 hover:text-amber-700"
-          href="mailto:contacto@fabianmorag.com"
-          title="Enviar email a Fabián Morag"><Mail size={24} />contacto@fabianmorag.com</a
-        >
+
+        <button class="group inline-block relative copy-email-btn">
+          <span class="flex gap-1 font-semibold text-amber-600 hover:text-amber-500"
+            >contacto@fabianmorag.com<CopyToClipboardSvg size={24} />
+          </span>
+
+          <div
+            class="-right-2 bottom-full absolute opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 duration-200"
+          >
+            <span class="bg-gray-800 px-2 py-1 rounded text-white text-xs leading-none" role="tooltip">Copiar</span>
+            <div
+              class="top-full right-4 absolute border-t-8 border-t-gray-800 border-transparent border-r-8 border-l-8 w-fit h-0"
+            >
+            </div>
+          </div>
+        </button>
+        <script>
+          const copyButton = document.querySelector('.copy-email-btn') as HTMLButtonElement
+          const tooltip = document.querySelector('button [role="tooltip"]') as HTMLElement
+
+          const copyToClipboard = () => {
+            navigator.clipboard.writeText('contacto@fabianmorag.com')
+            tooltip.innerText = '¡Copiado!'
+            setTimeout(() => (tooltip.innerText = 'Copiar'), 2000)
+          }
+
+          copyButton.addEventListener('click', copyToClipboard)
+        </script>
       </div>
     </div>
   </div>
+
+  <script>
+    const $ = (selector: string) => document.querySelector(selector) as HTMLElement
+
+    const form = $('form')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      const successMessage = $('.success-message')
+      const errorMessage = $('.error-message')
+      const btn = $('form button[type=submit]')
+      const btnSpinner = $('form .loading')
+
+      const formData = new FormData(e.target as HTMLFormElement)
+      const data = Object.fromEntries(formData)
+
+      btn.style.display = 'none'
+      btnSpinner.style.display = 'grid'
+
+      fetch('https://resend.fabianmorag.workers.dev/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then(res =>
+        res.ok
+          ? (successMessage.style.display = 'block')
+          : (() => {
+              errorMessage.style.visibility = 'visible'
+              btn.style.display = 'block'
+              btnSpinner.style.display = 'none'
+            })()
+      )
+    })
+  </script>
 </section>
-
-<script>
-  const $ = (selector: string) => document.querySelector(selector) as HTMLElement
-
-  const form = $('form')
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const successMessage = $('.success-message')
-    const errorMessage = $('.error-message')
-    const btn = $('form input[type=submit]')
-    const btnSpinner = $('form .loading')
-
-    const formData = new FormData(e.target as HTMLFormElement)
-    const data = Object.fromEntries(formData)
-
-    btn.style.display = 'none'
-    btnSpinner.style.display = 'grid'
-
-    fetch('https://resend.fabianmorag.workers.dev/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) =>
-      res.ok
-        ? (successMessage.style.display = 'block')
-        : (() => {
-            errorMessage.style.visibility = 'visible'
-            btn.style.display = 'block'
-            btnSpinner.style.display = 'none'
-          })()
-    )
-  })
-</script>

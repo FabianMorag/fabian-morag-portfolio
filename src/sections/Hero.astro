@@ -20,32 +20,38 @@ import GithubIcon from '@/components/icon/github.astro'
       </p>
       <div class="flex gap-2 md:gap-4 animate-delay-500 animate-fade-up">
         <a
-          class="block bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 px-6 py-3 rounded-xl w-full md:w-fit font-semibold text-white text-center"
+          class="before:top-1/2 before:left-1/2 before:absolute relative hover:before:inset-0 flex-1 md:flex-none bg-white before:bg-amber-600 px-6 py-3 border-2 border-amber-600 rounded-2xl before:rounded-full before:size-0 hover:before:size-full overflow-hidden font-semibold text-amber-600 hover:text-white text-center before:content-[''] hover:before:scale-125 transition-all before:transition-all"
           href="https://drive.google.com/file/d/1HsgUBak-HOoB0dklgr4z8hk4Y-rASuIg/view?usp=sharing"
           title="CV - Curriculum vitae de Fabián Morag"
-          target="_blank">Descargar CV</a
+          target="_blank"
+        >
+          <span class="z-10 relative">Descargar CV</span></a
         >
         <a
-          class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 p-3 rounded-xl w-fit text-white"
+          class="before:top-1/2 before:left-1/2 before:absolute relative before:inset-0 hover:before:inset-0 place-items-center grid bg-white before:bg-amber-600 p-3 border-2 border-amber-600 rounded-2xl before:rounded-full before:size-0 hover:before:size-full overflow-hidden text-amber-600 hover:text-white before:content-[''] hover:before:scale-125 transition-all before:transition-all"
           href="https://www.linkedin.com/in/fabián-morag-b92376241"
           title="Perfil de Linkedin de Fabián Morag"
           target="_blank"
         >
-          <LinkedinIcon size={20} />
+          <span class="z-10 relative">
+            <LinkedinIcon size={20} />
+          </span>
         </a>
         <a
-          class="place-items-center grid bg-gradient-to-br from-amber-500 to-amber-600 hover:shadow-md hover:shadow-slate-300 p-3 rounded-xl w-fit text-white"
+          class="before:top-1/2 before:left-1/2 before:absolute relative before:inset-0 hover:before:inset-0 place-items-center grid bg-white before:bg-amber-600 p-3 border-2 border-amber-600 rounded-2xl before:rounded-full before:size-0 hover:before:size-full overflow-hidden text-amber-600 hover:text-white before:content-[''] hover:before:scale-125 transition-all before:transition-all"
           href="https://github.com/FabianMorag"
           title="Perfil de GitHub de Fabián Morag"
           target="_blank"
         >
-          <GithubIcon size={24} />
+          <span class="z-10 relative">
+            <GithubIcon size={24} />
+          </span>
         </a>
       </div>
     </div>
 
     <Image
-      class="drop-shadow-[4px_4px_4px_rgba(0,0,0,.3)] mb-4 md:mb-0 p-2 border-2 border-amber-400 rounded-full w-60 md:w-80 object-center object-cover aspect-square animate-delay-100 animate-fade"
+      class="p-2 border-2 border-amber-400 rounded-full w-60 md:w-80 object-center object-cover aspect-square animate-delay-100 animate-fade"
       src="/fabian-morag.webp"
       alt="Imagen de Fabián Morag"
       title="Fabián Morag - Ingeniero de Software - Desarrollador Web - CRO"

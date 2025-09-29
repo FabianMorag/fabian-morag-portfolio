@@ -53,13 +53,15 @@ const { title, description } = Astro.props
 
 <style is:global>
   html {
-    --main-bg-color: #fffbeb;
-    --main-text-color: #1e293b;
+    --main-bg-color: oklch(98.7% 0.022 95.277);
+    --main-text-color: oklch(12.9% 0.042 264.695);
+    --body-bg-color: oklch(98.5% 0 0);
 
     scroll-behavior: smooth;
     font-family: 'Outfit Variable', sans-serif;
     /* text-slate-800 */
     color: var(--main-text-color);
+    background-color: var(--body-bg-color);
   }
 
   p,

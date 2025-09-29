@@ -24,12 +24,12 @@ export const SKILLS = [
     imageSrc: '/software/git.webp'
   },
   {
-    name: 'React',
-    imageSrc: '/software/react.webp'
-  },
-  {
     name: 'Node.js',
     imageSrc: '/software/nodejs.webp'
+  },
+  {
+    name: 'React',
+    imageSrc: '/software/react.webp'
   },
   {
     name: 'Astro',
@@ -40,8 +40,16 @@ export const SKILLS = [
     imageSrc: '/software/nextjs.webp'
   },
   {
+    name: 'Django',
+    imageSrc: '/software/django.webp'
+  },
+  {
     name: 'Express.js',
     imageSrc: '/software/expressjs.webp'
+  },
+  {
+    name: 'TanStack',
+    imageSrc: '/software/tanstack.webp'
   },
   {
     name: 'Tailwind CSS',
@@ -50,14 +58,6 @@ export const SKILLS = [
   {
     name: 'Sass',
     imageSrc: '/software/sass.webp'
-  },
-  {
-    name: 'WordPress',
-    imageSrc: '/software/wordpress.webp'
-  },
-  {
-    name: 'Directus',
-    imageSrc: '/software/directus.webp'
   },
   {
     name: 'MongoDB',
