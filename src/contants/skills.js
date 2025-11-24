@@ -32,32 +32,24 @@ export const SKILLS = [
     imageSrc: '/software/react.webp'
   },
   {
-    name: 'Astro',
-    imageSrc: '/software/astro.webp'
-  },
-  {
-    name: 'Next.js',
-    imageSrc: '/software/nextjs.webp'
-  },
-  {
-    name: 'Django',
-    imageSrc: '/software/django.webp'
-  },
-  {
-    name: 'Express.js',
-    imageSrc: '/software/expressjs.webp'
-  },
-  {
-    name: 'TanStack',
-    imageSrc: '/software/tanstack.webp'
-  },
-  {
     name: 'Tailwind CSS',
     imageSrc: '/software/tailwindcss.webp'
   },
   {
     name: 'Sass',
     imageSrc: '/software/sass.webp'
+  },
+  {
+    name: 'TanStack',
+    imageSrc: '/software/tanstack.webp'
+  },
+  {
+    name: 'Express.js',
+    imageSrc: '/software/expressjs.webp'
+  },
+  {
+    name: 'Django',
+    imageSrc: '/software/django.webp'
   },
   {
     name: 'MongoDB',
@@ -70,6 +62,14 @@ export const SKILLS = [
   {
     name: 'PostgreSQL',
     imageSrc: '/software/postgresql.webp'
+  },
+  {
+    name: 'Vitest',
+    imageSrc: '/software/vitest.webp'
+  },
+  {
+    name: 'Testing Library',
+    imageSrc: '/software/testing-library.webp'
   },
   {
     name: 'Google Cloud',
