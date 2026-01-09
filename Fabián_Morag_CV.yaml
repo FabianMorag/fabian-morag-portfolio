@@ -1,0 +1,134 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Fabián Morag
+  headline:
+  location: Valdivia, Chile
+  email: contacto@fabianmorag.com
+  phone: '+56994412678'
+  website: https://fabianmorag.com/
+  social_networks:
+    - network: LinkedIn
+      username: Fabian-Morag
+    - network: GitHub
+      username: FabianMorag
+  custom_connections:
+  sections:
+    ¡Hola!:
+      - Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecnologías de vanguardia y más de 3 años de experiencia. Soy un profesional adaptable, con ganas de contribuir a un buen ambiente laboral y trabajar en un entorno colaborativo. Abierto a nuevas oportunidades y desafíos, busco consolidar mi carrera y seguir creciendo en el campo de la informática y el desarrollo.
+    educación:
+      - institution: Universidad Austral de Chile
+        area: Ingeniería civil en informática
+        degree: Sup
+        start_date: 2017-03
+        end_date: 2022-05
+        location: Valdivia, Chile
+        highlights:
+          - Titulado con distinción máxima
+    experiencia:
+      - company: Innovex SPA
+        position: Ingeniero de desarrollo
+        start_date: 2025-07
+        end_date: 
+        location: Valdivia, Chile
+        highlights:
+          - Desarrollo principalmente frontend en la modernización de aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack).
+          - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
+          - Testing de funciones y componentes React (Vitest, React testing library)
+          - Desarrollo con especial atención a la mantenibilidad, aplicación de principios SOLID, patrones de diseño y el UX
+          - Redacción de documentación en formato JSDoc/TypeDoc
+          - Manejo de contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
+      - company: Freelance
+        position: Ingeniero de software
+        start_date: 2024-11
+        end_date: 2025-09
+        location: Valdivia, Chile
+        highlights:
+          - Desarrollo web full stack de aplicaciones privadas y sitios web públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
+          - Toma de requerimientos directamente con clientes
+          - Desarrollo con atención al SEO para optimizar sitios en motores de búsqueda
+          - Mantención de infraestructura y respaldos para distintas aplicaciones en GCP
+          - Refactoring de componentes React y Astro en sitios web públicos
+          - Automatización de despliegues a producción mediante jobs y webhooks
+      - company: D2B - Inteligencia Digital
+        position: Analista frontend
+        start_date: 2022-07
+        end_date: 2024-09
+        location: Valdivia, Chile
+        highlights:
+          - Participé activamente en el desarrollo frontend de funcionalidades y componentes, vanilla y React, para aplicaciones web comerciales, con atención al UX (JavaScript, TypeScript, React 18, TanStack, SASS)
+          - Hice el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
+          - Optimización de sitios web mediante herramientas especializadas de análisis y AB test como GA4 o ABTasty
+          - Lideré reuniones con clientes durante más de un año. Planifiqué y ejecuté experimentos web para VTR Claro, Coopeuch, entre otros
+          - Apoyé a la optimización SEO de sitios web comerciales de cara a los diferentes motores de búsqueda mediante el manejo de Search console, metadata, archivos sitemap y robots
+      - company: Universidad Austral de Chile
+        position: Soporte técnico
+        start_date: 2021-05
+        end_date: 2021-11
+        location: Valdivia, Chile
+        highlights:
+          - Corregí vulnerabilidades de seguridad de la aplicación en el servidor (Docker, Nginx)
+          - Creé respaldos de la base de datos periódicamente (PostgreSQL)
+          - Creé la documentación de los procesos de seguridad y respaldo llevados a cabo durante este periodo
+      - company: Puentes digitales
+        position: Ingeniero de software
+        start_date: 2021-01
+        end_date: 2021-03
+        location: Valdivia, Chile
+        highlights:
+          - Desarrollé componentes e interfaces para proyecto de trayectoria académica para facultad de profesores (Typescript, React 17, Next.js 10, GraphQL)
+          - Actualicé modelos para admitir nuevos atributos. Creé nuevos endpoints para obtener y mostrar los nuevos datos asociados (TypeScript, PostgreSQL, GraphQL)
+          - Trabajé con el equipo basado en metodologías agiles (Scrum, Kanban)
+    proyectos:
+      - name: '[D2B - Inteligencia Digital](https://d2b.cl)'
+        date:
+        start_date: 2024-02
+        end_date: 2024-06
+        location: Valdivia, Chile
+        summary: Sitio web oficial de la empresa consultora D2B
+        highlights:
+          - Aplicación fullstack lanzada a mediados del 2024, actualizando su sitio web previamente vanilla
+          - Incluye frontend, dos CMS y una base de datos funcionando en conjunto
+          - Aplicación open-source con [repositorio en GitHub](https://github.com/CRO-D2B/web-d2b-2024)
+    habilidades:
+      - label: Desarrollo Web
+        details: Alto conocimiento de desarrollo web full-stack. Amplio manejo de tecnologías frontend (React, Next.js, Astro) y backend (Node.js, Django, Express). Experiencia en TypeScript para desarrollo y despliegue de aplicaciones en servidores con Docker, Nginx y servicios cloud
+      - label: Lenguajes de programación
+        details: HTML, CSS, JavaScript, TypeScript, Python, HTML, CSS, SQL, GraphQL
+      - label: Frameworks
+        details: React, Next.js, Astro, Django, Express.js
+      - label: Infrastructura y DevOps
+        details: Docker, Nginx, GCP, Podman, Ansible
+      - label: Idiomas
+        details: Inglés (Intermedio-avanzado), Español (Nativo)
+design:
+  theme: classic
+  page:
+    show_footer: true
+    show_top_note: false
+  colors:
+    body: rgb(64, 64, 64)
+  links:
+    show_external_link_icon: true
+  header:
+    connections:
+      phone_number_format: international
+  templates:
+    footer: "NAME - Página PAGE_NUMBER de TOTAL_PAGES"
+locale:
+  language: spanish
+settings:
+  current_date: '2026-01-09'
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: []
