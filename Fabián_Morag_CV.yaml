@@ -32,9 +32,9 @@ cv:
         location: Valdivia, Chile
         highlights:
           - Desarrollo principalmente frontend en la modernización de aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack).
-          - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
+          - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
           - Testing de funciones y componentes React (Vitest, React testing library)
-          - Desarrollo con especial atención a la mantenibilidad, aplicación de principios SOLID, patrones de diseño y el UX
+          - Desarrollo con especial atención a la mantenibilidad, aplicando de principios SOLID, patrones de diseño y el UX
           - Redacción de documentación en formato JSDoc/TypeDoc
           - Manejo de contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
       - company: Freelance
@@ -43,7 +43,7 @@ cv:
         end_date: 2025-09
         location: Valdivia, Chile
         highlights:
-          - Desarrollo web full stack de aplicaciones privadas y sitios web públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
+          - Desarrollo web full stack de aplicaciones privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
           - Toma de requerimientos directamente con clientes
           - Desarrollo con atención al SEO para optimizar sitios en motores de búsqueda
           - Mantención de infraestructura y respaldos para distintas aplicaciones en GCP
@@ -56,7 +56,7 @@ cv:
         location: Valdivia, Chile
         highlights:
           - Participé activamente en el desarrollo frontend de funcionalidades y componentes, vanilla y React, para aplicaciones web comerciales, con atención al UX (JavaScript, TypeScript, React 18, TanStack, SASS)
-          - Hice el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
+          - Realicé el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
           - Optimización de sitios web mediante herramientas especializadas de análisis y AB test como GA4 o ABTasty
           - Lideré reuniones con clientes durante más de un año. Planifiqué y ejecuté experimentos web para VTR Claro, Coopeuch, entre otros
           - Apoyé a la optimización SEO de sitios web comerciales de cara a los diferentes motores de búsqueda mediante el manejo de Search console, metadata, archivos sitemap y robots
@@ -76,8 +76,8 @@ cv:
         location: Valdivia, Chile
         highlights:
           - Desarrollé componentes e interfaces para proyecto de trayectoria académica para facultad de profesores (Typescript, React 17, Next.js 10, GraphQL)
-          - Actualicé modelos para admitir nuevos atributos. Creé nuevos endpoints para obtener y mostrar los nuevos datos asociados (TypeScript, PostgreSQL, GraphQL)
-          - Trabajé con el equipo basado en metodologías agiles (Scrum, Kanban)
+          - Actualicé modelos para admitir nuevos atributos requeridos por el cliente. Creé nuevos endpoints para obtener y mostrar los nuevos datos asociados (TypeScript, PostgreSQL, GraphQL)
+          - Trabajé con el equipo basado en metodologías ágiles (Scrum, Kanban)
     proyectos:
       - name: '[D2B - Inteligencia Digital](https://d2b.cl)'
         date:
@@ -86,7 +86,7 @@ cv:
         location: Valdivia, Chile
         summary: Sitio web oficial de la empresa consultora D2B
         highlights:
-          - Aplicación fullstack lanzada a mediados del 2024, actualizando su sitio web previamente vanilla
+          - Aplicación fullstack lanzada a mediados del 2024, actualizando su sitio web anteriormente vanilla
           - Incluye frontend, dos CMS y una base de datos funcionando en conjunto
           - Aplicación open-source con [repositorio en GitHub](https://github.com/CRO-D2B/web-d2b-2024)
     habilidades:
@@ -107,6 +107,10 @@ design:
     show_top_note: false
   colors:
     body: rgb(64, 64, 64)
+    connections: rgb(0, 187, 167)
+    headline: rgb(0, 187, 167)
+    section_titles: rgb(0, 187, 167)
+    name: rgb(0, 187, 167)
   links:
     show_external_link_icon: true
   header:

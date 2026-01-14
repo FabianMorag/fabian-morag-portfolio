@@ -15,10 +15,10 @@
   page-show-footer: true,
   page-show-top-note: false,
   colors-body: rgb(64, 64, 64),
-  colors-name: rgb(0, 79, 144),
-  colors-headline: rgb(0, 79, 144),
-  colors-connections: rgb(0, 79, 144),
-  colors-section-titles: rgb(0, 79, 144),
+  colors-name: rgb(0, 187, 167),
+  colors-headline: rgb(0, 187, 167),
+  colors-connections: rgb(0, 187, 167),
+  colors-section-titles: rgb(0, 187, 167),
   colors-links: rgb(0, 79, 144),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
@@ -127,11 +127,11 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
 
     - Desarrollo principalmente frontend en la modernización de aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18\/19, TanStack).
 
-    - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
+    - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
 
     - Testing de funciones y componentes React (Vitest, React testing library)
 
-    - Desarrollo con especial atención a la mantenibilidad, aplicación de principios SOLID, patrones de diseño y el UX
+    - Desarrollo con especial atención a la mantenibilidad, aplicando de principios SOLID, patrones de diseño y el UX
 
     - Redacción de documentación en formato JSDoc\/TypeDoc
 
@@ -150,7 +150,7 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
   [
     #strong[Freelance], Ingeniero de software
 
-    - Desarrollo web full stack de aplicaciones privadas y sitios web públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
+    - Desarrollo web full stack de aplicaciones privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
 
     - Toma de requerimientos directamente con clientes
 
@@ -177,7 +177,7 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
 
     - Participé activamente en el desarrollo frontend de funcionalidades y componentes, vanilla y React, para aplicaciones web comerciales, con atención al UX (JavaScript, TypeScript, React 18, TanStack, SASS)
 
-    - Hice el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
+    - Realicé el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
 
     - Optimización de sitios web mediante herramientas especializadas de análisis y AB test como GA4 o ABTasty
 
@@ -219,9 +219,9 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
 
     - Desarrollé componentes e interfaces para proyecto de trayectoria académica para facultad de profesores (Typescript, React 17, Next.js 10, GraphQL)
 
-    - Actualicé modelos para admitir nuevos atributos. Creé nuevos endpoints para obtener y mostrar los nuevos datos asociados (TypeScript, PostgreSQL, GraphQL)
+    - Actualicé modelos para admitir nuevos atributos requeridos por el cliente. Creé nuevos endpoints para obtener y mostrar los nuevos datos asociados (TypeScript, PostgreSQL, GraphQL)
 
-    - Trabajé con el equipo basado en metodologías agiles (Scrum, Kanban)
+    - Trabajé con el equipo basado en metodologías ágiles (Scrum, Kanban)
 
   ],
   [
@@ -240,7 +240,7 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
 
     #summary[Sitio web oficial de la empresa consultora D2B]
 
-    - Aplicación fullstack lanzada a mediados del 2024, actualizando su sitio web previamente vanilla
+    - Aplicación fullstack lanzada a mediados del 2024, actualizando su sitio web anteriormente vanilla
 
     - Incluye frontend, dos CMS y una base de datos funcionando en conjunto
 
