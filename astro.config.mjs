@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
 
 import tailwindcss from '@tailwindcss/vite'
