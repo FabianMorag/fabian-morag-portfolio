@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
+  },
+  image: {
+    service: passthroughImageService()
   }
 })
