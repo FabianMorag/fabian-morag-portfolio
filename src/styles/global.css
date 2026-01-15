@@ -3,8 +3,7 @@
 @plugin "daisyui" {
   themes:
     cupcake --default,
-    cupcake-dark --prefersdark,
-    light;
+    cupcake-dark --prefersdark;
 }
 
 @plugin "daisyui/theme" {
