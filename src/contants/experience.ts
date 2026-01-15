@@ -14,7 +14,7 @@ const data = [
     endDate: { textTime: 'Actualidad' }
   },
   {
-    role: 'Ingeniero de software - Desarrollador web',
+    role: 'Ingeniero de software',
     company: 'Freelance',
     description: [
       'Desarrollé aplicaciones web fullstack privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)',
