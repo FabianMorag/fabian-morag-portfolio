@@ -2,35 +2,45 @@
 import ThemeController from './ThemeController.astro'
 ---
 
-<header class="top-0 z-10 fixed shadow-none navbar">
-  <div class="flex mx-auto px-4 rounded-full w-full max-w-5xl glass">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="lg:hidden btn btn-ghost">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
-          </svg>
-        </div>
-        <ul tabindex="-1" class="z-1 bg-base-100 shadow mt-3 p-2 rounded-box w-52 menu menu-sm dropdown-content">
-          <li><a>Inicio</a></li>
-          <li><a>Experiencia</a></li>
-          <li><a>Referencias</a></li>
-          <li><a>Proyectos</a></li>
-          <li><a>Conocimientos</a></li>
-          <li><a>Contacto</a></li>
+<header class="top-0 z-10 fixed p-2 drawer drawer-end">
+  <input id="custom-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="flex flex-col drawer-content">
+    <div class="mx-auto rounded-full w-full max-w-5xl glass navbar">
+      <div class="navbar-start"></div>
+      <div class="hidden lg:flex navbar-center">
+        <ul class="menu menu-horizontal">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
+      <div class="navbar-end">
+        <ThemeController />
+
+        <label for="custom-drawer" aria-label="open sidebar" class="lg:hidden mx-2 btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block stroke-current size-8"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+      </div>
     </div>
-    <div class="hidden lg:flex navbar-center">
-      <ul class="px-1 menu menu-horizontal">
-        <li><a>Inicio</a></li>
-        <li><a>Experiencia</a></li>
-        <li><a>Proyectos</a></li>
-        <li><a>Contacto</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <ThemeController />
-    </div>
+  </div>
+
+  <div class="drawer-side">
+    <label for="custom-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="bg-base-200 p-4 w-56 min-h-full menu">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#references">Referencias</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Conocimientos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
   </div>
 </header>
