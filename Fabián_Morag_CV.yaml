@@ -28,27 +28,27 @@ cv:
       - company: Innovex SPA
         position: Ingeniero de desarrollo
         start_date: 2025-07
-        end_date: 
+        end_date:
         location: Valdivia, Chile
         highlights:
-          - Desarrollo principalmente frontend en la modernización de aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack).
+          - Trabajé principalmente frontend en la modernización de aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack)
           - Creación de nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
-          - Testing de funciones y componentes React (Vitest, React testing library)
-          - Desarrollo con especial atención a la mantenibilidad, aplicando de principios SOLID, patrones de diseño y el UX
-          - Redacción de documentación en formato JSDoc/TypeDoc
-          - Manejo de contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
+          - Realicé testing de funciones y componentes React (Vitest, React testing library)
+          - Trabajé las aplicaciones con especial atención a la mantenibilidad, aplicando de principios SOLID, patrones de diseño y el UX
+          - Redacté documentación en formato JSDoc/TypeDoc para la aplicación desarrollada
+          - Hice gestión de contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
       - company: Freelance
         position: Ingeniero de software
         start_date: 2024-11
         end_date: 2025-09
         location: Valdivia, Chile
         highlights:
-          - Desarrollo web full stack de aplicaciones privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
-          - Toma de requerimientos directamente con clientes
-          - Desarrollo con atención al SEO para optimizar sitios en motores de búsqueda
-          - Mantención de infraestructura y respaldos para distintas aplicaciones en GCP
-          - Refactoring de componentes React y Astro en sitios web públicos
-          - Automatización de despliegues a producción mediante jobs y webhooks
+          - Desarrollé aplicaciones web fullstack privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)
+          - Tomé requerimientos directamente con clientes
+          - Desarrollé sitios con atención al SEO para optimizar sitios en motores de búsqueda
+          - Realicé mantención de infraestructura y respaldos para distintas aplicaciones en GCP
+          - Realicé refactoring de componentes React y Astro en sitios web públicos
+          - Automaticé de despliegues a producción mediante jobs y webhooks
       - company: D2B - Inteligencia Digital
         position: Analista frontend
         start_date: 2022-07
@@ -57,7 +57,7 @@ cv:
         highlights:
           - Participé activamente en el desarrollo frontend de funcionalidades y componentes, vanilla y React, para aplicaciones web comerciales, con atención al UX (JavaScript, TypeScript, React 18, TanStack, SASS)
           - Realicé el levantamiento de infraestructura y backend para aplicaciones web (GCP, Node.js, TypeScript, MySQL, PostgreSQL, Next.js 12, Express.js, Directus, Docker, Nginx)
-          - Optimización de sitios web mediante herramientas especializadas de análisis y AB test como GA4 o ABTasty
+          - Trabajé en la optimización de sitios web mediante herramientas especializadas de análisis y AB test como GA4 o ABTasty
           - Lideré reuniones con clientes durante más de un año. Planifiqué y ejecuté experimentos web para VTR Claro, Coopeuch, entre otros
           - Apoyé a la optimización SEO de sitios web comerciales de cara a los diferentes motores de búsqueda mediante el manejo de Search console, metadata, archivos sitemap y robots
       - company: Universidad Austral de Chile
@@ -117,7 +117,7 @@ design:
     connections:
       phone_number_format: international
   templates:
-    footer: "NAME - Página PAGE_NUMBER de TOTAL_PAGES"
+    footer: 'NAME - Página PAGE_NUMBER de TOTAL_PAGES'
 locale:
   language: spanish
 settings:
