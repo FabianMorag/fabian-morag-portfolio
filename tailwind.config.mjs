@@ -6,18 +6,5 @@ export default {
   theme: {
     extend: {}
   },
-  plugins: [
-    tailwindcssAnimated,
-    function ({ addComponents }) {
-      addComponents({
-        '.hidden-scrollbar': {
-          '-ms-overflow-style': 'none',
-          'scrollbar-width': 'none',
-          '&::-webkit-scrollbar': {
-            display: 'none'
-          }
-        }
-      })
-    }
-  ]
+  plugins: [tailwindcssAnimated]
 }
