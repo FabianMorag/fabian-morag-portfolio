@@ -51,22 +51,3 @@ const { title, description } = Astro.props
     <Footer />
   </body>
 </html>
-
-<style is:global>
-  html {
-    --main-bg-color: oklch(98.7% 0.022 95.277);
-    --main-text-color: oklch(12.9% 0.042 264.695);
-    --body-bg-color: oklch(98.5% 0 0);
-
-    scroll-behavior: smooth;
-    font-family: 'Outfit Variable', sans-serif;
-    /* text-slate-800 */
-    color: var(--main-text-color);
-    background-color: var(--body-bg-color);
-  }
-
-  p,
-  li {
-    text-wrap: pretty;
-  }
-</style>
