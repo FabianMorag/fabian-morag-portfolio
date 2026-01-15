@@ -9,22 +9,25 @@ importers:
   .:
     dependencies:
       '@astrojs/sitemap':
-        specifier: ^3.6.1
+        specifier: 3.6.1
         version: 3.6.1
       '@fontsource-variable/outfit':
         specifier: 5.2.8
         version: 5.2.8
       '@tailwindcss/vite':
-        specifier: ^4.1.18
+        specifier: 4.1.18
         version: 4.1.18(vite@6.4.1(@types/node@20.14.8)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.4.3))
       astro:
         specifier: 5.16.9
         version: 5.16.9(@types/node@20.14.8)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.4.3)
+      daisyui:
+        specifier: ^5.5.14
+        version: 5.5.14
       standard:
         specifier: 17.1.2
         version: 17.1.2
       tailwindcss:
-        specifier: ^4.1.18
+        specifier: 4.1.18
         version: 4.1.18
     devDependencies:
       prettier:
@@ -34,7 +37,7 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       tailwindcss-animated:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0(tailwindcss@4.1.18)
 
 packages:
@@ -958,6 +961,9 @@ packages:
   csso@5.0.5:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
+
+  daisyui@5.5.14:
+    resolution: {integrity: sha512-L47rvw7I7hK68TA97VB8Ee0woHew+/ohR6Lx6Ah/krfISOqcG4My7poNpX5Mo5/ytMxiR40fEaz6njzDi7cuSg==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -3646,6 +3652,8 @@ snapshots:
   csso@5.0.5:
     dependencies:
       css-tree: 2.2.1
+
+  daisyui@5.5.14: {}
 
   data-view-buffer@1.0.2:
     dependencies:
