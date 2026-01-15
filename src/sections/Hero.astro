@@ -7,7 +7,7 @@ import CV from '@assets/Fabián_Morag_CV.pdf'
 <section id="hero" class="content-center px-4 py-24 min-h-dvh">
   <div class="md:flex md:flex-row-reverse justify-between items-center gap-6 mx-auto max-w-5xl">
     <Image
-      class="shadow shadow-accent mx-auto mb-4 border-4 border-accent rounded-full size-60 md:size-80 object-cover aspect-square animate-delay-100 animate-fade"
+      class="shadow shadow-accent mx-auto mb-4 border-4 border-accent rounded-full size-60 md:size-72 lg:size-80 object-cover aspect-square animate-delay-100 animate-fade"
       src={MainPortfolioImage}
       alt="Imagen de Fabián Morag"
       title="Fabián Morag - Ingeniero de Software - Desarrollador Web"
@@ -34,28 +34,30 @@ import CV from '@assets/Fabián_Morag_CV.pdf'
         nuevas oportunidades y desafíos, busco consolidar mi carrera y seguir creciendo en el campo de la informática y
         el desarrollo.
       </p>
-      <div class="animate-delay-1200 animate-fade">
+      <div class="flex flex-wrap justify-center md:justify-start gap-2 animate-delay-1200 animate-fade">
         <a
           href={CV}
           title="CV - Curriculum vitae de Fabián Morag"
           target="_blank"
           role="button"
-          class="btn btn-neutral btn-wide">Ver CV</a
+          class="btn btn-wide btn-neutral">Ver CV</a
         >
-        <a
-          href="https://www.linkedin.com/in/fabian-morag/"
-          title="Perfil de Linkedin de Fabián Morag"
-          target="_blank"
-          role="button"
-          class="btn">linkedin</a
-        >
-        <a
-          href="https://github.com/FabianMorag/"
-          title="Perfil de GitHub de Fabián Morag"
-          target="_blank"
-          role="button"
-          class="btn">github</a
-        >
+        <div>
+          <a
+            href="https://www.linkedin.com/in/fabian-morag/"
+            title="Perfil de Linkedin de Fabián Morag"
+            target="_blank"
+            role="button"
+            class="btn">linkedin</a
+          >
+          <a
+            href="https://github.com/FabianMorag/"
+            title="Perfil de GitHub de Fabián Morag"
+            target="_blank"
+            role="button"
+            class="btn">github</a
+          >
+        </div>
       </div>
     </div>
   </div>
