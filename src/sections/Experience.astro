@@ -1,14 +1,17 @@
 ---
 import EXPERIENCE from '@/contants/experience.ts'
+
+const experienceLength = EXPERIENCE.length
 ---
 
-<section class="px-4 py-24">
+<section id="experience" class="px-4 py-24">
   <div class="mx-auto max-w-5xl">
     <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Experiencia</h2>
     <ul class="timeline-snap-icon timeline timeline-compact timeline-vertical">
       {
-        EXPERIENCE.map(({ role, company, description, startDate, endDate }) => (
+        EXPERIENCE.map(({ role, company, description, startDate, endDate }, index) => (
           <li>
+            {index !== 0 && <hr />}
             <div class="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                 <path
@@ -18,17 +21,15 @@ import EXPERIENCE from '@/contants/experience.ts'
                 />
               </svg>
             </div>
-            <div class="mb-10 p-6 rounded-2xl timeline-start glass">
-              <div class="w-full md:w-1/4 md:text-lg text-nowrap text:sm">
-                <time class="font-mono italic" datetime={startDate.dateTime}>
-                  {startDate.textTime}
-                </time>{' '}
-                -{' '}
-                <time class="font-mono italic" datetime={endDate.dateTime}>
-                  {endDate.textTime}
-                </time>
-              </div>
-              <h3 class="font-black text-lg">
+            <div class="mb-8 p-6 rounded-2xl timeline-start glass">
+              <time class="font-mono italic" datetime={startDate.dateTime}>
+                {startDate.textTime}
+              </time>{' '}
+              -{' '}
+              <time class="font-mono italic" datetime={endDate.dateTime}>
+                {endDate.textTime}
+              </time>
+              <h3 class="font-black text-teal-500 text-lg">
                 {company} - {role}
               </h3>
               <ul class="pl-4 text-sm md:text-base list-disc">
@@ -37,38 +38,10 @@ import EXPERIENCE from '@/contants/experience.ts'
                 ))}
               </ul>
             </div>
-            <hr />
+            {index !== experienceLength - 1 && <hr />}
           </li>
         ))
       }
     </ul>
-  </div>
-</section>
-
-<section id="experience" class="px-4 py-24">
-  <div class="mx-auto max-w-5xl">
-    <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Experiencia</h2>
-    <div class="flex flex-col gap-6">
-      {
-        EXPERIENCE.map(({ role, company, description, startDate, endDate }) => (
-          <article class="flex md:flex-row flex-col gap-4 bg-white shadow-md shadow-slate-300 px-6 md:px-8 py-8 rounded-3xl">
-            <div class="w-full md:w-1/4 md:text-lg text-nowrap text:sm">
-              <time datetime={startDate?.dateTime}>{startDate.textTime}</time> -{' '}
-              <time datetime={endDate?.dateTime}>{endDate.textTime}</time>
-            </div>
-            <div class="w-full md:w-3/4">
-              <h3 class="mb-4 font-semibold text-amber-700 text-lg md:text-xl">
-                {role} - {company}
-              </h3>
-              <ul class="[&>li]:mb-1 pl-4 text-slate-600 text-sm md:text-base list-disc">
-                {description.map(item => (
-                  <li>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </article>
-        ))
-      }
-    </div>
   </div>
 </section>
