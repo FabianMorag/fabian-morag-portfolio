@@ -6,7 +6,7 @@ const data = [
       'Modernicé aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack)',
       'Creé nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además del apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)',
       'Realicé testing de funciones y componentes React (Vitest, React testing library)',
-      'Trabajé en las aplicaciones con especial atención a la mantenibilidad, aplicando principios SOLID, patrones de diseño y el UX',
+      'Trabajé en aplicaciones con especial atención a la mantenibilidad, aplicando principios SOLID, patrones de diseño y el UX',
       'Redacté documentación en formato JSDoc/TypeDoc para la aplicación desarrollada',
       'Gestioné contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)'
     ],
@@ -20,7 +20,7 @@ const data = [
       'Desarrollé aplicaciones web fullstack privadas y sitios públicos para personas y empresas (Next.js 14, Astro, Tailwind CSS 4, WordPress, GCP, Hostinger, DNS)',
       'Tomé requerimientos directamente con clientes',
       'Desarrollé sitios con atención al SEO para optimizar sitios en motores de búsqueda',
-      'Mantuve la infraestructura y cree respaldos para distintas aplicaciones en GCP',
+      'Mantuve la infraestructura y creé respaldos para distintas aplicaciones en GCP',
       'Refactoricé componentes React y Astro en sitios web públicos',
       'Automaticé despliegues a producción mediante jobs y webhooks'
     ],
