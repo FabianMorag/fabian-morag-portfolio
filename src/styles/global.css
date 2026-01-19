@@ -47,3 +47,11 @@ body {
   font-family: 'Outfit Variable', sans-serif;
   text-wrap: pretty;
 }
+
+.hidden-scrollbar {
+  --ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
