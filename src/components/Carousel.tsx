@@ -34,7 +34,7 @@ export function Carousel() {
         className="hidden-scrollbar flex overflow-x-scroll scroll-smooth snap-mandatory snap-x"
       >
         {REFERENCES.map(({ name, image, role, link, rec }) => (
-          <div key={crypto.randomUUID()} className="p-2 min-w-full md:min-w-1/2 snap-center md:snap-start">
+          <div key={name} className="p-2 min-w-full md:min-w-1/2 snap-center md:snap-start">
             <article className="p-6 md:p-8 rounded-2xl h-full glass">
               <img
                 src={image}
@@ -50,8 +50,10 @@ export function Carousel() {
               <small className="block mb-4 text-sm">{role}</small>
 
               <div className="[&>p:last-child]:mb-0 [&>p]:mb-[.5lh]">
-                {rec.map(paragraph => (
-                  <p className="text-sm md:text-base whitespace-pre-line">{paragraph}</p>
+                {rec.map((paragraph, index) => (
+                  <p key={index} className="text-sm md:text-base whitespace-pre-line">
+                    {paragraph}
+                  </p>
                 ))}
               </div>
             </article>
