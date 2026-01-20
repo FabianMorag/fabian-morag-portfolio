@@ -2,11 +2,43 @@
 import { Image } from 'astro:assets'
 import ExternalLinkIcon from '@/components/icon/external-link.astro'
 import GithubIcon from '@/components/icon/github.astro'
-import { PROJECTS } from '@/contants/projects'
+import { PROJECTS } from '@/contants/projects.ts'
+import GitHub from '@/components/logos/GitHub.astro'
 ---
 
 <section id="projects" class="px-6 py-24">
-  <div class="m-auto max-w-screen-lg">
+  <div class="m-auto max-w-5xl">
+    <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Proyectos</h2>
+    <div class="gap-6 grid">
+      {
+        PROJECTS.map(({ name, img, description, siteUrl, srcCodeUrl, mainBtn, secBtn }, index) => (
+          <article class="glass card sm:card-side">
+            <figure>
+              <img src={img} alt="Imagen de la aplicación" class="max-w-full max-h-72 object-contain" />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">{name}!</h3>
+              <p>{description}</p>
+              <div class="justify-end card-actions">
+                <button class="btn btn-primary">
+                  {mainBtn}
+                  <span class="size-5 icon-[iconamoon--link-external]" />
+                </button>
+                <button class="btn btn-neutral">
+                  {secBtn}
+                  <GitHub width={20} />
+                </button>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="px-6 py-24">
+  <div class="m-auto max-w-5xl">
     <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Proyectos</h2>
     <div class="gap-6 grid">
       {
