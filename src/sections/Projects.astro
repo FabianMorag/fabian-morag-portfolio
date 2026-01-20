@@ -15,12 +15,12 @@ import { PROJECTS } from '@/contants/projects.ts'
             <div class="card-body">
               <h3 class="card-title">{name}!</h3>
               <p>{description}</p>
-              <div class="justify-end card-actions">
-                <a href={siteUrl} target="_blank" class="btn btn-primary">
+              <div class="flex justify-end card-actions">
+                <a href={siteUrl} target="_blank" class="sm:flex-initial flex-1 btn btn-primary">
                   {mainBtn}
                   <span class="size-5 icon-[iconamoon--link-external]" />
                 </a>
-                <a href={srcCodeUrl} target="_blank" class="btn btn-neutral">
+                <a href={srcCodeUrl} target="_blank" class="btn-outline btn">
                   {secBtn}
                   <span class="size-5 icon-[mdi--github]" />
                 </a>
