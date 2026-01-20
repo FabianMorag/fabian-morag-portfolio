@@ -9,10 +9,10 @@ import { PROJECTS } from '@/contants/projects.ts'
       {
         PROJECTS.map(({ name, img, description, siteUrl, srcCodeUrl, mainBtn, secBtn }) => (
           <article class="glass card sm:card-side">
-            <figure>
-              <img src={img} alt="Imagen de la aplicación" class="max-w-full max-h-64 object-contain" />
+            <figure class="mx-auto w-full max-w-64">
+              <img src={img} alt="Imagen de la aplicación" class="object-contain" />
             </figure>
-            <div class="card-body">
+            <div class="w-full card-body">
               <h3 class="card-title">{name}</h3>
               <p>{description}</p>
               <div class="flex justify-end card-actions">
