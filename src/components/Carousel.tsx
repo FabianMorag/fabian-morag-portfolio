@@ -6,15 +6,15 @@ export function Carousel() {
   const rightButtonRef = useRef<HTMLButtonElement>(null)
   const leftButtonRef = useRef<HTMLButtonElement>(null)
 
-  const onClickLeft = () => {
+  const handleClickLeft = () => {
     if (carouselRef.current) carouselRef.current.scrollBy(-carouselRef.current.clientWidth, 0)
   }
 
-  const onClickRight = () => {
+  const handleClickRight = () => {
     if (carouselRef.current) carouselRef.current.scrollBy(carouselRef.current.clientWidth, 0)
   }
 
-  const onScroll = () => {
+  const handleScroll = () => {
     if (carouselRef.current && rightButtonRef.current && leftButtonRef.current) {
       carouselRef.current.scrollLeft === 0
         ? leftButtonRef.current.classList.add('hidden')
@@ -30,7 +30,7 @@ export function Carousel() {
     <div className="relative">
       <div
         ref={carouselRef}
-        onScroll={onScroll}
+        onScroll={handleScroll}
         className="hidden-scrollbar flex overflow-x-scroll scroll-smooth snap-mandatory snap-x"
       >
         {REFERENCES.map(({ name, image, role, link, rec }) => (
@@ -62,14 +62,14 @@ export function Carousel() {
       </div>
 
       <button
-        onClick={onClickLeft}
+        onClick={handleClickLeft}
         ref={leftButtonRef}
         className="hidden top-1/2 left-1 absolute bg-neutral/75 border-none size-8 cursor-pointer btn btn-circle btn-neutral"
       >
         ❮
       </button>
       <button
-        onClick={onClickRight}
+        onClick={handleClickRight}
         ref={rightButtonRef}
         className="top-1/2 right-1 absolute bg-neutral/75 border-none size-8 cursor-pointer btn btn-circle btn-neutral"
       >
