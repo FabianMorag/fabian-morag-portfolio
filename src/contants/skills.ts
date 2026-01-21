@@ -1,43 +1,43 @@
 export const SKILLS = [
   {
     name: 'HTML',
-    imageSrc: '/software/html.webp'
+    logo: 'icon-[devicon--html5]'
   },
   {
     name: 'CSS',
-    imageSrc: '/software/css.webp'
+    logo: 'icon-[devicon--css3]'
   },
   {
     name: 'JavaScript',
-    imageSrc: '/software/javascript.webp'
+    logo: 'icon-[devicon--javascript]'
   },
   {
     name: 'TypeScript',
-    imageSrc: '/software/typescript.webp'
+    logo: 'icon-[devicon--typescript]'
   },
   {
     name: 'Python',
-    imageSrc: '/software/python.webp'
+    logo: 'icon-[devicon--python]'
   },
   {
     name: 'Git',
-    imageSrc: '/software/git.webp'
+    logo: 'icon-[devicon--git]'
   },
   {
     name: 'Node.js',
-    imageSrc: '/software/nodejs.webp'
+    logo: 'icon-[devicon--nodejs]'
   },
   {
     name: 'React',
-    imageSrc: '/software/react.webp'
+    logo: 'icon-[devicon--react]'
   },
   {
     name: 'Tailwind CSS',
-    imageSrc: '/software/tailwindcss.webp'
+    logo: 'icon-[devicon--tailwindcss]'
   },
   {
     name: 'Sass',
-    imageSrc: '/software/sass.webp'
+    logo: 'icon-[devicon--sass]'
   },
   {
     name: 'TanStack',
@@ -45,27 +45,27 @@ export const SKILLS = [
   },
   {
     name: 'Express.js',
-    imageSrc: '/software/expressjs.webp'
+    logo: 'icon-[devicon--express]'
   },
   {
     name: 'Django',
-    imageSrc: '/software/django.webp'
+    logo: 'icon-[devicon--djangorest-wordmark]'
   },
   {
     name: 'MongoDB',
-    imageSrc: '/software/mongodb.webp'
+    logo: 'icon-[devicon--mongodb]'
   },
   {
     name: 'MySQL',
-    imageSrc: '/software/mysql.webp'
+    logo: 'icon-[devicon--mysql]'
   },
   {
     name: 'PostgreSQL',
-    imageSrc: '/software/postgresql.webp'
+    logo: 'icon-[devicon--postgresql]'
   },
   {
     name: 'Vitest',
-    imageSrc: '/software/vitest.webp'
+    logo: 'icon-[devicon--vitest]'
   },
   {
     name: 'Testing Library',
@@ -73,10 +73,10 @@ export const SKILLS = [
   },
   {
     name: 'Google Cloud',
-    imageSrc: '/software/gcp.webp'
+    logo: 'icon-[devicon--googlecloud]'
   },
   {
     name: 'Nginx',
-    imageSrc: '/software/nginx.webp'
+    logo: 'icon-[logos--nginx]'
   }
 ]
