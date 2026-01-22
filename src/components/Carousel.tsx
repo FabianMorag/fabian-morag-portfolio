@@ -15,14 +15,14 @@ export function Carousel() {
   }
 
   const handleScroll = () => {
-    if (carouselRef.current && rightButtonRef.current && leftButtonRef.current) {
+    if (carouselRef.current) {
       carouselRef.current.scrollLeft === 0
-        ? leftButtonRef.current.classList.add('hidden')
-        : leftButtonRef.current.classList.remove('hidden')
+        ? leftButtonRef.current!.classList.add('hidden')
+        : leftButtonRef.current!.classList.remove('hidden')
 
       carouselRef.current.scrollWidth - carouselRef.current.clientWidth - 1 <= carouselRef.current.scrollLeft
-        ? rightButtonRef.current.classList.add('hidden')
-        : rightButtonRef.current.classList.remove('hidden')
+        ? rightButtonRef.current!.classList.add('hidden')
+        : rightButtonRef.current!.classList.remove('hidden')
     }
   }
 
