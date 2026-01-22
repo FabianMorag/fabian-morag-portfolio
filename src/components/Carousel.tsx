@@ -38,14 +38,14 @@ export function Carousel({ children }: { children: React.ReactNode }) {
       <button
         onClick={handleClickLeft}
         ref={leftButtonRef}
-        className="hidden top-1/2 left-1 absolute bg-neutral/75 border-none size-8 cursor-pointer btn btn-circle btn-neutral"
+        className="hidden top-1/2 left-0 absolute bg-neutral/75 border-none size-8 md:size-12 -translate-x-1/3 cursor-pointer btn btn-circle btn-neutral"
       >
         ❮
       </button>
       <button
         onClick={handleClickRight}
         ref={rightButtonRef}
-        className="top-1/2 right-1 absolute bg-neutral/75 border-none size-8 cursor-pointer btn btn-circle btn-neutral"
+        className="top-1/2 right-0 absolute bg-neutral/75 border-none size-8 md:size-12 translate-x-1/3 cursor-pointer btn btn-circle btn-neutral"
       >
         ❯
       </button>
