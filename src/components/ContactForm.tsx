@@ -39,16 +39,27 @@ export function ContactForm() {
         <input
           name="name"
           type="text"
-          className="mb-4 w-full input validator"
+          className="mb-4 focus:border-accent rounded-2xl outline-none w-full glass input validator"
           placeholder="Ingresa tu nombre"
           required
         />
 
         <label className="label">Correo electrónico</label>
-        <input name="email" className="mb-4 w-full input validator" type="email" placeholder="mail@site.com" required />
+        <input
+          name="email"
+          className="mb-4 focus:border-accent rounded-2xl outline-none w-full glass input validator"
+          type="email"
+          placeholder="mail@site.com"
+          required
+        />
 
         <label className="label">Mensaje</label>
-        <textarea name="message" className="mb-4 w-full h-24 textarea validator" placeholder="¡Hola mundo!" required />
+        <textarea
+          name="message"
+          className="mb-4 focus:border-accent rounded-2xl outline-none w-full h-24 glass textarea validator"
+          placeholder="¡Hola mundo!"
+          required
+        />
 
         {data && (
           <div role="alert" className="mx-auto mb-4 rounded-2xl w-fit alert alert-success">
