@@ -31,9 +31,9 @@ const experienceLength = EXPERIENCE.length
               <h3 class="text-primary text-lg">
                 <span class="font-extrabold">{company}</span> - <span class="font-semibold">{role}</span>
               </h3>
-              <ul class="pl-4 text-sm md:text-base list-disc">
+              <ul class="[&>li:last-child]:mb-0 [&>li]:mb-[.5lh] pl-4 text-sm md:text-base list-disc">
                 {description.map(item => (
-                  <li class="mb-1">{item}</li>
+                  <li>{item}</li>
                 ))}
               </ul>
             </div>
