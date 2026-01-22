@@ -1,7 +1,6 @@
-import { REFERENCES } from '@/contants/references.js'
 import { useRef } from 'react'
 
-export function Carousel() {
+export function Carousel({ children }: { children: React.ReactNode }) {
   const carouselRef = useRef<HTMLDivElement>(null)
   const rightButtonRef = useRef<HTMLButtonElement>(null)
   const leftButtonRef = useRef<HTMLButtonElement>(null)
@@ -33,32 +32,7 @@ export function Carousel() {
         onScroll={handleScroll}
         className="hidden-scrollbar flex overflow-x-scroll scroll-smooth snap-mandatory snap-x"
       >
-        {REFERENCES.map(({ name, image, role, link, rec }) => (
-          <div key={name} className="p-2 min-w-full md:min-w-1/2 snap-center md:snap-start">
-            <article className="p-6 md:p-8 rounded-2xl h-full glass">
-              <img
-                src={image}
-                alt={`Imagen de ${name}`}
-                className="p-1 border-2 border-primary rounded-full object-cover aspect-square"
-                width={80}
-                height={80}
-              />
-
-              <a href={link} target="_blank" className="font-semibold text-lg md:text-xl link link-primary">
-                {name}
-              </a>
-              <small className="block mb-4 text-sm">{role}</small>
-
-              <div className="[&>p:last-child]:mb-0 [&>p]:mb-[.5lh]">
-                {rec.map((paragraph, index) => (
-                  <p key={index} className="text-sm md:text-base whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </article>
-          </div>
-        ))}
+        {children}
       </div>
 
       <button
