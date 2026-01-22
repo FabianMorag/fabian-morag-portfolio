@@ -36,49 +36,57 @@ export function ContactForm() {
     <form ref={formRef} onSubmit={handleSubmit}>
       <fieldset className="fieldset">
         <label className="label">Nombre</label>
-        <input name="name" type="text" className="w-full input validator" placeholder="Ingresa tu nombre" required />
+        <input
+          name="name"
+          type="text"
+          className="mb-4 w-full input validator"
+          placeholder="Ingresa tu nombre"
+          required
+        />
 
         <label className="label">Correo electrónico</label>
-        <input name="email" className="w-full input validator" type="email" placeholder="mail@site.com" required />
+        <input name="email" className="mb-4 w-full input validator" type="email" placeholder="mail@site.com" required />
 
         <label className="label">Mensaje</label>
-        <textarea name="message" className="w-full h-24 textarea validator" placeholder="¡Hola mundo!" required />
+        <textarea name="message" className="mb-4 w-full h-24 textarea validator" placeholder="¡Hola mundo!" required />
 
         {data && (
-          <div role="alert" className="mx-auto mt-4 rounded-2xl w-fit alert alert-success">
+          <div role="alert" className="mx-auto mb-4 rounded-2xl w-fit alert alert-success">
             <span className="size-4 icon-[ix--success]"></span>
             <span>Tu mensaje ha sido enviado!</span>
           </div>
         )}
         {error && (
-          <div role="alert" className="mx-auto mt-4 rounded-2xl w-fit alert alert-error">
+          <div role="alert" className="mx-auto mb-4 rounded-2xl w-fit alert alert-error">
             <span className="size-4 icon-[ix--error]"></span>
             <span>Error al enviar el mensaje</span>
           </div>
         )}
 
-        <button type="submit" disabled={isMutating} className="mt-6 btn btn-neutral">
+        <button type="submit" disabled={isMutating} className="mb-6 btn btn-neutral">
           {isMutating ? <span className="loading loading-spinner"></span> : 'Enviar mensaje'}
         </button>
 
-        <p className="mt-4 label">O escribeme al correo</p>
+        <div>
+          <p className="block label">O escribeme al correo</p>
 
-        <button type="button" onClick={copyToClipboard} className="group relative p-0 w-fit btn btn-link">
-          <span className="flex items-center gap-1 font-semibold">
-            contacto@fabianmorag.com<span className="size-4 icon-[tabler--copy]"></span>
-          </span>
-
-          <div className="-right-4 bottom-full absolute opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 duration-200">
-            <span
-              ref={tooltipRef}
-              className="bg-neutral px-2 py-1 rounded text-neutral-content text-xs leading-none"
-              role="tooltip"
-            >
-              Copiar
+          <button type="button" onClick={copyToClipboard} className="group relative p-0 w-fit btn btn-link">
+            <span className="flex items-center gap-1 font-semibold">
+              contacto@fabianmorag.com<span className="size-4 icon-[tabler--copy]"></span>
             </span>
-            <div className="top-full right-4 absolute border-transparent border-t-8 border-t-neutral border-r-8 border-l-8 w-fit h-0"></div>
-          </div>
-        </button>
+
+            <div className="-right-4 bottom-full absolute opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 duration-200">
+              <span
+                ref={tooltipRef}
+                className="bg-neutral px-2 py-1 rounded text-neutral-content text-xs leading-none"
+                role="tooltip"
+              >
+                Copiar
+              </span>
+              <div className="top-full right-4 absolute border-transparent border-t-8 border-t-neutral border-r-8 border-l-8 w-fit h-0"></div>
+            </div>
+          </button>
+        </div>
       </fieldset>
     </form>
   )
