@@ -10,8 +10,8 @@ const experienceLength = EXPERIENCE.length
       {
         EXPERIENCE.map(({ role, company, description, startDate, endDate }, index) => (
           <li style="--timeline-row-start:1.75rem">
-            {index !== 0 && <hr class="bg-base-content" />}
-            <div class="timeline-middle">
+            {index !== 0 && <hr class="hidden sm:block bg-base-content" />}
+            <div class="hidden sm:block timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6">
                 <path
                   fill-rule="evenodd"
@@ -37,7 +37,7 @@ const experienceLength = EXPERIENCE.length
                 ))}
               </ul>
             </div>
-            {index !== experienceLength - 1 && <hr class="bg-base-content" />}
+            {index !== experienceLength - 1 && <hr class="hidden sm:block bg-base-content" />}
           </li>
         ))
       }
