@@ -57,14 +57,14 @@ export function ContactForm() {
           </div>
         )}
 
-        <button type="submit" disabled={isMutating} className="mt-6 btn btn-primary">
+        <button type="submit" disabled={isMutating} className="mt-6 btn btn-neutral">
           {isMutating ? <span className="loading loading-spinner"></span> : 'Enviar mensaje'}
         </button>
 
         <p className="mt-4 label">O escribeme al correo</p>
 
-        <button type="button" onClick={copyToClipboard} className="group inline relative p-0 w-fit btn btn-link">
-          <span className="flex gap-1 font-semibold">
+        <button type="button" onClick={copyToClipboard} className="group relative p-0 w-fit btn btn-link">
+          <span className="flex items-center gap-1 font-semibold">
             contacto@fabianmorag.com<span className="size-4 icon-[tabler--copy]"></span>
           </span>
 
