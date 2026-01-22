@@ -1,8 +1,10 @@
 ---
 import '@/styles/global.css'
 import '@fontsource-variable/outfit'
+import { Image } from 'astro:assets'
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
+import backgroundImage from '@assets/bg.svg'
 
 interface Props {
   title: string
@@ -46,6 +48,12 @@ const { title, description } = Astro.props
   </head>
 
   <body>
+    <Image
+      src={backgroundImage}
+      alt="Background Image"
+      class="-z-10 fixed opacity-75 w-full h-full object-cover"
+      loading="eager"
+    />
     <Header />
     <slot />
     <Footer />
