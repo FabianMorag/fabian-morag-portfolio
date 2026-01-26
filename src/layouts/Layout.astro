@@ -1,7 +1,10 @@
 ---
+import '@/styles/global.css'
 import '@fontsource-variable/outfit'
+import { Image } from 'astro:assets'
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
+import backgroundImage from '@assets/bg.svg'
 
 interface Props {
   title: string
@@ -35,37 +38,24 @@ const { title, description } = Astro.props
         "url": "https://fabianmorag.com/",
         "image": "https://fabianmorag.com/fabian-morag.webp",
         "sameAs": ["https://github.com/FabianMorag", "https://www.linkedin.com/in/fabi%C3%A1n-morag-b92376241/"],
-        "jobTitle": "Software Engineer, Web Developer, CRO",
+        "jobTitle": "Software Engineer, Web Developer, Software Developer",
         "worksFor": {
           "@type": "Organization",
-          "name": "D2B"
+          "name": "Innovex Spa"
         }
       }
     </script>
   </head>
 
   <body>
+    <Image
+      src={backgroundImage}
+      alt="Background Image"
+      class="-z-10 fixed opacity-75 w-full h-full object-cover"
+      loading="eager"
+    />
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
-
-<style is:global>
-  html {
-    --main-bg-color: oklch(98.7% 0.022 95.277);
-    --main-text-color: oklch(12.9% 0.042 264.695);
-    --body-bg-color: oklch(98.5% 0 0);
-
-    scroll-behavior: smooth;
-    font-family: 'Outfit Variable', sans-serif;
-    /* text-slate-800 */
-    color: var(--main-text-color);
-    background-color: var(--body-bg-color);
-  }
-
-  p,
-  li {
-    text-wrap: pretty;
-  }
-</style>

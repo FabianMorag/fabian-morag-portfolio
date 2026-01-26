@@ -2,7 +2,8 @@ export const PROJECTS = [
   {
     name: 'D2B - Sitio web oficial',
     img: '/d2b.webp',
-    description: 'Sitio web desarrollado con Astro y Tailwind CSS en el frontend para rendimiento y diseño óptimos. Backend con WordPress y Directus para gestión y personalización de contenido. Bases de datos y despliegue gestionados en GCP.',
+    description:
+      'Sitio web de la consultora D2B, donde muestra sus servicios, trabajadores y casos de éxito, además de un formulario de contacto. Desarrollador con Astro, React y Tailwind CSS. En el backend usé WordPress y Directus para manejar el contenido. Todo desplegado en GCP.',
     siteUrl: 'https://d2b.cl/',
     srcCodeUrl: 'https://github.com/CRO-D2B/web-d2b-2024',
     mainBtn: 'Visitar sitio',
@@ -11,7 +12,8 @@ export const PROJECTS = [
   {
     name: 'E-commerce',
     img: '/my-ecommerce.webp',
-    description: 'Desarrollado con Next.js para una experiencia de usuario rápida y fluida, con enfoque en UX. Utiliza una API GraphQL para consultas y manipulación de datos eficientes.',
+    description:
+      'Demo de E-commerce construido con Next.js, pensado en que la navegación sea rápida y amigable, usando galerías de componentes para acelerar el desarrollo. Conectado a una propia API GraphQL para manejar los datos provinientes de otra API.',
     siteUrl: 'https://my-ecommerce-five-pied.vercel.app/',
     srcCodeUrl: 'https://github.com/FabianMorag/my-ecommerce',
     mainBtn: 'Ver desarrollo',
@@ -20,7 +22,8 @@ export const PROJECTS = [
   {
     name: 'Landing Page',
     img: '/my-gym.webp',
-    description: 'Landing page demo para un gimnasio ficticio, desarrollada con Astro y Tailwind CSS. Incluye una simulación de contratación y contacto.',
+    description:
+      'Landing page de un gimnasio ficticio, hecha con Astro y Tailwind CSS. Cuenta con una landing de contratación dinámica y formulario de contacto.',
     siteUrl: 'https://my-gym-peach.vercel.app/',
     srcCodeUrl: 'https://github.com/FabianMorag/my-gym',
     mainBtn: 'Demo',
@@ -29,7 +32,8 @@ export const PROJECTS = [
   {
     name: 'Juego: Encontrar los pares',
     img: '/match-pairs.webp',
-    description: 'Juego que tiene por objetivo es encontrar todas las cartas iguales en el menor número de intentos. Desarrollado con React y Sass para el diseño e interacción.',
+    description:
+      'Un juego simple donde hay que encontrar todas las parejas de cartas con la menor cantidad de intentos. Un juego de mucha lógica desarrollado con React y Sass.',
     siteUrl: 'https://fabianmorag.github.io/match-pairs',
     srcCodeUrl: 'https://github.com/FabianMorag/match-pairs',
     mainBtn: 'Demo',

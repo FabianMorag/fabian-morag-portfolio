@@ -1,51 +1,32 @@
 ---
-import { Image } from 'astro:assets'
-import ExternalLinkIcon from '@/components/icon/external-link.astro'
-import GithubIcon from '@/components/icon/github.astro'
-import { PROJECTS } from '@/contants/projects'
+import { PROJECTS } from '@/contants/projects.ts'
 ---
 
-<section id="projects" class="px-6 py-24">
-  <div class="m-auto max-w-screen-lg">
+<section id="projects" class="px-4 py-24">
+  <div class="m-auto max-w-5xl">
     <h2 class="mb-12 font-bold text-4xl md:text-5xl text-center">Proyectos</h2>
-    <div class="gap-6 grid">
+    <div class="gap-6 md:gap-12 grid">
       {
-        PROJECTS.map(({ name, img, description, siteUrl, srcCodeUrl, mainBtn, secBtn }, index) => (
-          <article class="flex md:flex-row-reverse flex-col justify-between gap-6 bg-white shadow-md shadow-slate-300 px-6 md:px-8 py-6 md:py-8 rounded-3xl">
-            {img && (
-              <Image
-                class="drop-shadow-[4px_4px_10px_rgba(0,0,0,.5)] mx-auto w-52 md:w-64 object-contain"
-                src={img}
-                alt={`Imagen de proyecto ${name}`}
-                width={300}
-                height={200}
-              />
-            )}
-
-            <div>
-              <h3 class="mb-4 font-bold text-lg md:text-xl">{name}</h3>
-              <p class="mb-6 text-slate-600 text-sm md:text-base">{description}</p>
-              <div class="flex gap-1 md:gap-4">
-                <a
-                  class="before:top-1/2 before:left-1/2 before:absolute relative hover:before:inset-0 flex-1 md:flex-none items-center bg-transparent before:bg-amber-600 px-3 md:px-6 py-3 border-2 border-amber-600 rounded-2xl before:rounded-full before:size-0 hover:before:size-full overflow-hidden font-semibold text-amber-600 hover:text-white text-sm md:text-base before:content-[''] hover:before:scale-125 transition-all before:transition-all"
-                  href={siteUrl}
-                  target="_blank"
-                >
-                  <span class="z-10 relative flex justify-center items-center gap-1 md:gap-2">
-                    {mainBtn}
-                    <ExternalLinkIcon size={24} />
-                  </span>
+        PROJECTS.map(({ name, img, description, siteUrl, srcCodeUrl, mainBtn, secBtn }) => (
+          <article class="md:px-6 sm:py-8 pt-8 glass card sm:card-side">
+            <figure class="mx-auto w-full max-w-64">
+              <img src={img} alt="Imagen de la aplicación" class="object-contain" />
+            </figure>
+            <div class="w-full card-body">
+              <h3 class="card-title">{name}</h3>
+              <p>{description}</p>
+              <div class="justify-end card-actions">
+                <a href={siteUrl} target="_blank" class="flex-1 w-full md:btn-wide btn btn-primary">
+                  {mainBtn}
+                  <span class="size-5 icon-[iconamoon--link-external]" />
                 </a>
-
                 <a
-                  class="before:top-1/2 before:left-1/2 before:absolute relative hover:before:inset-0 bg-transparent before:bg-slate-950 px-3 md:px-6 py-3 border-2 border-slate-950 rounded-2xl before:rounded-full h-fit before:size-0 hover:before:size-full overflow-hidden font-semibold hover:text-white text-sm md:text-base before:content-[''] hover:before:scale-125 transition-all before:transition-all"
                   href={srcCodeUrl}
                   target="_blank"
+                  class="sm:btn-outline w-full sm:w-auto text-base-content btn-link btn"
                 >
-                  <span class="z-10 relative flex justify-center items-center gap-1 md:gap-2">
-                    {secBtn}
-                    <GithubIcon size={24} />
-                  </span>
+                  {secBtn}
+                  <span class="size-5 icon-[mdi--github]" />
                 </a>
               </div>
             </div>
