@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Fabián Morag",
   footer: context { [Fabián Morag - Página #str(here().page()) de #str(counter(page).final().first())] },
-  top-note: [ #emph[Última actualización Ene 2026] ],
+  top-note: [ #emph[Última actualización Jul 2026] ],
   locale-catalog-language: "es",
   page-size: "us-letter",
   page-top-margin: 0.7in,
@@ -77,13 +77,15 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 1,
-    day: 9,
+    month: 7,
+    day: 28,
   ),
 )
 
 
 = Fabián Morag
+
+  #headline([Ingeniero de software | Frontend y aplicaciones web full-stack])
 
 #connections(
   [#connection-with-icon("location-dot")[Valdivia, Chile]],
@@ -95,9 +97,9 @@
 )
 
 
-== ¡Hola!
+== perfil profesional
 
-Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecnologías de vanguardia y más de 3 años de experiencia. Soy un profesional adaptable, con ganas de contribuir a un buen ambiente laboral y trabajar en un entorno colaborativo. Abierto a nuevas oportunidades y desafíos, busco consolidar mi carrera y seguir creciendo en el campo de la informática y el desarrollo.
+Ingeniero Civil en Informática con más de cuatro años de experiencia en desarrollo de software y aplicaciones web full-stack. Especializado en construir interfaces React y TypeScript, integrar APIs y trabajar con datos de monitorización, con experiencia complementaria en Python, Django, infraestructura y automatización. Me enfoco en entregar soluciones mantenibles, accesibles y orientadas a las necesidades reales de usuarios y equipos.
 
 == Educación
 
@@ -125,17 +127,17 @@ Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecno
   [
     #strong[Innovex SPA], Ingeniero de desarrollo
 
-    - Modernicé aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18\/19, TanStack)
+    - Desarrollé y modernicé interfaces para plataformas de monitorización del sector agropecuario, incluyendo dashboards de métricas, series temporales y gráficos interactivos (TypeScript, React 18\/19, TanStack Query, uPlot)
 
-    - Creé nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
+    - Implementé funcionalidades de control, configuración y generación de reportes, definiendo estados explícitos de carga, vacío y error para mejorar la experiencia de usuario y la accesibilidad
 
-    - Realicé testing de funciones y componentes React (Vitest, React testing library)
+    - Creé y mantuve endpoints para la extracción y actualización de datos de monitorización, junto con mejoras en contratos de respuesta y manejo de errores HTTP (Python, Django, SQLite, REST API)
 
-    - Trabajé en aplicaciones con especial atención a la mantenibilidad, aplicando principios SOLID, patrones de diseño y el UX
+    - Validé datos en los límites de servicio y corregí incompatibilidades entre payloads del backend y modelos del frontend, evitando errores silenciosos y reintentos innecesarios en la interfaz (Zod, TanStack Query)
 
-    - Redacté documentación en formato JSDoc\/TypeDoc para la aplicación desarrollada
+    - Desarrollé pruebas unitarias y de componentes para funcionalidades críticas y estados de error (Vitest, React Testing Library)
 
-    - Gestioné contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
+    - Apliqué principios SOLID, patrones de diseño y criterios de mantenibilidad; documenté APIs y componentes con JSDoc\/TypeDoc y gestioné entornos Linux con Nginx, Apache, Ansible, Podman y Docker
 
   ],
   [

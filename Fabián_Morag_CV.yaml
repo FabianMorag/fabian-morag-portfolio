@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Fabián Morag
-  headline:
+  headline: Ingeniero de software | Frontend y aplicaciones web full-stack
   location: Valdivia, Chile
   email: contacto@fabianmorag.com
   phone: '+56994412678'
@@ -13,8 +13,8 @@ cv:
       username: FabianMorag
   custom_connections:
   sections:
-    ¡Hola!:
-      - Soy Ingeniero Civil en informática, cuento con conocimientos en distintas tecnologías de vanguardia y más de 3 años de experiencia. Soy un profesional adaptable, con ganas de contribuir a un buen ambiente laboral y trabajar en un entorno colaborativo. Abierto a nuevas oportunidades y desafíos, busco consolidar mi carrera y seguir creciendo en el campo de la informática y el desarrollo.
+    Perfil profesional:
+      - Ingeniero Civil en Informática con más de cuatro años de experiencia en desarrollo de software y aplicaciones web full-stack. Especializado en construir interfaces React y TypeScript, integrar APIs y trabajar con datos de monitorización, con experiencia complementaria en Python, Django, infraestructura y automatización. Me enfoco en entregar soluciones mantenibles, accesibles y orientadas a las necesidades reales de usuarios y equipos.
     educación:
       - institution: Universidad Austral de Chile
         area: Ingeniería civil en informática
@@ -31,12 +31,12 @@ cv:
         end_date:
         location: Valdivia, Chile
         highlights:
-          - Modernicé aplicaciones de monitorización, métricas y gráficos para clientes del rubro agropecuario (TypeScript, React 18/19, TanStack)
-          - Creé nuevos endpoints para API de extracción y actualización de datos de monitorización, junto al mejoramiento de manejo de errores HTTP. Además de apoyo en el modelamiento de nuevas entidades (Python, Django, SQLite)
-          - Realicé testing de funciones y componentes React (Vitest, React testing library)
-          - Trabajé en aplicaciones con especial atención a la mantenibilidad, aplicando principios SOLID, patrones de diseño y el UX
-          - Redacté documentación en formato JSDoc/TypeDoc para la aplicación desarrollada
-          - Gestioné contenedores Linux para pruebas y pasos a producción (Nginx, Apache, Ansible, Podman, Docker)
+          - Desarrollé y modernicé interfaces para plataformas de monitorización del sector agropecuario, incluyendo dashboards de métricas, series temporales y gráficos interactivos (TypeScript, React 18/19, TanStack Query, uPlot)
+          - Implementé funcionalidades de control, configuración y generación de reportes, definiendo estados explícitos de carga, vacío y error para mejorar la experiencia de usuario y la accesibilidad
+          - Creé y mantuve endpoints para la extracción y actualización de datos de monitorización, junto con mejoras en contratos de respuesta y manejo de errores HTTP (Python, Django, SQLite, REST API)
+          - Validé datos en los límites de servicio y corregí incompatibilidades entre payloads del backend y modelos del frontend, evitando errores silenciosos y reintentos innecesarios en la interfaz (Zod, TanStack Query)
+          - Desarrollé pruebas unitarias y de componentes para funcionalidades críticas y estados de error (Vitest, React Testing Library)
+          - Apliqué principios SOLID, patrones de diseño y criterios de mantenibilidad; documenté APIs y componentes con JSDoc/TypeDoc y gestioné entornos Linux con Nginx, Apache, Ansible, Podman y Docker
       - company: Freelance
         position: Ingeniero de software
         start_date: 2024-11
@@ -121,7 +121,7 @@ design:
 locale:
   language: spanish
 settings:
-  current_date: '2026-01-09'
+  current_date: '2026-07-28'
   render_command:
     design:
     locale:
