@@ -21,12 +21,12 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "standard": "17.1.2",
-    "swr": "^2.3.8",
+    "swr": "2.3.8",
     "tailwindcss": "4.1.18"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.430",
-    "@iconify/tailwind4": "^1.2.1",
+    "@iconify/json": "2.2.430",
+    "@iconify/tailwind4": "1.2.1",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "tailwindcss-animated": "2.0.0"
